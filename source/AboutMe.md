@@ -3,7 +3,7 @@
 
 I am **YangXuemin (Michelle)**, a Quality Analyst from China, who worked in software testing since 2010.
 
-![YangXuemin (Michelle)'s avatar](https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/Avatar.png)
+![YangXuemin (Michelle)'s avatar](https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/Avatar.jpg)
 
 #### I have written following articles on Github:
 

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>What lessons I learned as a Q-BA? - Testing Blogs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Q-BA here is referring new BA who acted as a QA before, just like me…
+I acts as QA in the last two years, and although I tried to do some stuff related to business, however, it is slightly different w">
+<meta property="og:type" content="article">
+<meta property="og:title" content="What lessons I learned as a Q-BA?">
+<meta property="og:url" content="http://xmyang.github.io/2012/09/26/BQA/index.html">
+<meta property="og:site_name" content="Testing Blogs">
+<meta property="og:description" content="Q-BA here is referring new BA who acted as a QA before, just like me…
+I acts as QA in the last two years, and although I tried to do some stuff related to business, however, it is slightly different w">
+<meta property="og:updated_time" content="2016-06-01T14:39:03.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="What lessons I learned as a Q-BA?">
+<meta name="twitter:description" content="Q-BA here is referring new BA who acted as a QA before, just like me…
+I acts as QA in the last two years, and although I tried to do some stuff related to business, however, it is slightly different w">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+  <link href="/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+
+</head>
+<body>
+  <div id="container">
+    <header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <a id="main-nav-toggle" class="nav-icon"></a>
+      <a id="logo" class="logo" href="/"></a>
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/categories">Categories</a>
+        
+          <a class="main-nav-link" href="/tags">Tags</a>
+        
+          <a class="main-nav-link" href="/AboutMe.html">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://xmyang.github.io"></form>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+    <section id="main" class="outer"><article id="post-BQA" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      What lessons I learned as a Q-BA?
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2012/09/26/BQA/" class="article-date">
+  <time datetime="2012-09-25T16:00:00.000Z" itemprop="datePublished">2012-09-26</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Test/">Test</a>
+  </div>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>Q-BA here is referring new BA who acted as a QA before, just like me…</strong></p>
+<p>I acts as QA in the last two years, and although I tried to do some stuff related to business, however, it is slightly different when I acts as a full-time BA in the current project.</p>
+<p>In one word, I think the difference is, as QA, I accept the fact that all the behaviors is well-considered and good enough, then the only think I need to check is if they are working well.</p>
+<p>However, as BA, I think I should be more critical of the proposed option, and try to find if it is really suitable for the business needs.</p>
+<h3 id="Lesson1:_Does_sad_path_really_matter?">Lesson1: Does sad path really matter?</h3><p>From QA perspective, especially when most of happy path is guaranteed by kinds of tests, then finding evil scenarios to break the application is really important in my QA career.</p>
+<p>So at the beginning of the BA career, I always tend to find out all sad paths for the scenario.</p>
+<p><strong>Example:</strong></p>
+<p><strong>When</strong> I am working on the story elaboration of one story” save and send email”, which is about asking the user email, then send the product info to the user via email.</p>
+<p><strong>Then</strong></p>
+<p><strong>From QA perspective,</strong></p>
+<pre><code>I mainly focusing <span class="function_start"><span class="keyword">on</span></span> handling <span class="keyword">the</span> bad path,
+how <span class="keyword">about</span> <span class="keyword">it</span> <span class="keyword">is</span> empty, how <span class="keyword">about</span> <span class="keyword">if</span> <span class="keyword">it</span> <span class="keyword">is</span> too long, how <span class="keyword">about</span> <span class="keyword">if</span> <span class="keyword">it</span> <span class="keyword">is</span> <span class="keyword">not</span> well-formatted
+...
+</code></pre><p><strong>From BA perspective,</strong></p>
+<pre><code>First thing <span class="keyword">is</span> <span class="keyword">to</span> see <span class="keyword">if</span> <span class="keyword">it</span> makes sense <span class="keyword">to</span> ask user <span class="keyword">to</span> input <span class="keyword">it</span> again,
+how <span class="keyword">about</span> pre-populate <span class="keyword">it</span> <span class="keyword">since</span> <span class="keyword">it</span> <span class="keyword">is</span> asked <span class="keyword">before</span>? 
+...
+</code></pre><h3 id="Lesson2:_Do_not_be_pulled_into_details_too_much!">Lesson2: Do not be pulled into details too much!</h3><p>From QA perspective, I did many scenario testing(system capability for user to achieve specific goal) and story testing(provide/get fast feedback along the story development process). </p>
+<p>So I prefer to go to details as per each scenario, and try to evolve more detailed scenario.</p>
+<p>Then from BA perspective, the whole part is more important than focusing on the small part and detailed information.</p>
+<p><strong>Example:</strong></p>
+<p><strong>Given</strong> we are working on the project in the initiate phase</p>
+<p><strong>When</strong> prototype comes passed from Business to us for reference</p>
+<p><strong>Then</strong></p>
+<p><strong>From QA perspective,</strong></p>
+<pre><code>I mainly find flaws as per each section,<span class="instruction"> and </span>to<span class="instruction"> check </span>the text field<span class="instruction"> and </span>buttons behaviors.
+I mainly find<span class="instruction"> if </span>any spelling errors around all the wording<span class="instruction"> and </span>text
+<span class="keyword">.</span>..
+</code></pre><p><strong>From BA perspective,</strong></p>
+<pre><code>[I need <span class="keyword">to</span> think more <span class="keyword">like</span> UX]
+ <span class="keyword">Do</span> we need <span class="keyword">to</span> schedule user testing <span class="keyword">or</span> expert review <span class="keyword">of</span> the prototype <span class="keyword">to</span> see <span class="keyword">if</span> the design makes sense?
+[I need <span class="keyword">to</span> think more <span class="keyword">like</span> Dev]
+ What<span class="comment">'s the integration points among the system with other systems?</span>
+ <span class="keyword">If</span> the wording <span class="keyword">and</span> <span class="keyword">text</span> need <span class="keyword">to</span> be approved <span class="keyword">by</span> legal team?
+ ...
+</code></pre><h3 id="Lesson3:_Go_directly_to_the_business_for_any_need">Lesson3: Go directly to the business for any need</h3><p>From QA perspective, sometimes I will firstly go to BA if some puzzles happen.And then go to business if necessary.</p>
+<p>Then from BA perspective, if any puzzle happen, go to the people you need to ask for answers. Don’t Wait!</p>
+<h3 id="Lesson4:_Facilitation_skills_matter_a_lot">Lesson4: Facilitation skills matter a lot</h3><p>As a BA, the facilitation skill is important to gather the clarification and solution.</p>
+<p>There are many scenarios you need to facilitate the meeting at the inception phase of the project, or during daily business discussion, IPM and meetings.</p>
+<p><em>I just realized the importance, and I think the book <the secret="" of="" facilitation=""> is really cool, thanks kangkang’s recommendation.</the></em></p>
+
+      
+    </div>
+  
+    <footer class="article-footer">
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BA/">BA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Lessons-Learned/">Lessons Learned</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/QA/">QA</a></li></ul>
+
+    </footer>
+  
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/06/23/Bug_Bash/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-title"><span>&lt;</span>&nbsp;
+        
+          Bug Bash
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Yang Xuemin&nbsp;
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, theme by <a href="http://github.com/ppoffice">PPOffice</a>
+    </div>
+  </div>
+</footer>
+    
+
+<script src="/js/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>

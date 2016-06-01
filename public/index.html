@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Testing Blogs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Yang Xuemin&apos;s personal blogs about testing.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Testing Blogs">
+<meta property="og:url" content="http://xmyang.github.io/index.html">
+<meta property="og:site_name" content="Testing Blogs">
+<meta property="og:description" content="Yang Xuemin&apos;s personal blogs about testing.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Testing Blogs">
+<meta name="twitter:description" content="Yang Xuemin&apos;s personal blogs about testing.">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+  <link href="/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+
+</head>
+<body>
+  <div id="container">
+    <header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <a id="main-nav-toggle" class="nav-icon"></a>
+      <a id="logo" class="logo" href="/"></a>
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/categories">Categories</a>
+        
+          <a class="main-nav-link" href="/tags">Tags</a>
+        
+          <a class="main-nav-link" href="/AboutMe.html">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://xmyang.github.io"></form>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+    <section id="main" class="outer">
+      <article id="post-Page_Tracking_Tools" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/01/06/Page_Tracking_Tools/">Page Tracking tools</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2016/01/06/Page_Tracking_Tools/" class="article-date">
+  <time datetime="2016-01-05T16:00:00.000Z" itemprop="datePublished">2016-01-06</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Test/">Test</a>
+  </div>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Background">Background</h3><p>There are 5 common tracking tools in the market:</p>
+<ul>
+<li>Google Analytics</li>
+<li>Krux</li>
+<li>Omniture</li>
+<li>Sizmek</li>
+<li>Nielsen</li>
+</ul>
+<h3 id="1-_GA_(Google_Analytics)">1. GA (Google Analytics)</h3><h4 id="What_is_it?">What is it?</h4><ul>
+<li>Free</li>
+<li>Analysis the behavior of the internet users and helps the business make wise decision.</li>
+</ul>
+<h4 id="How_to_test_it?">How to test it?</h4><ol>
+<li>Use GA real time feature to verify the page view and events.</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/GA.png" alt="GA"></p>
+<ol>
+<li>Download <a href="https://chrome.google.com/webstore/detail/omnibug/bknpehncffejahipecakbfkomebjmokl" target="_blank" rel="external">Omnibug</a> extension for Chrome</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/Omnibug.png" alt="Omnibug"></p>
+<ol>
+<li>Download <a href="https://chrome.google.com/webstore/detail/google-analytics-debugger/jnkmfdileelhofjcijamephohjechhna" target="_blank" rel="external">Google Analytics Debugger</a> and check the GA tracking in the javascript console in the browser</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/GADebugger.png" alt="Google Analytics Debugger"></p>
+<h3 id="2-_krux">2. krux</h3><h4 id="What_is_it?-1">What is it?</h4><p>Krux helps the clients to collect the non-PII(  IP host address, pages viewed, browser type, Internet browsing and usage habits, Internet Service Provider, domain name, the time/date of a visit to a website, the referring URL and a computer or device’s operating system information to analysis:</p>
+<ul>
+<li>who are the consumer</li>
+<li>where are they come from?</li>
+<li>why do they like me?</li>
+<li>where do they go?</li>
+<li>what is the right strategy to engage them?</li>
+</ul>
+<p>Please checkout <a href="http://www.krux.com/privacy/" target="_blank" rel="external">http://www.krux.com/privacy/</a> for more details</p>
+<h4 id="How_to_test_it?-1">How to test it?</h4><p>Download Omnibug extension for Chrome</p>
+<h3 id="3-_Omniture">3. Omniture</h3><h4 id="What_is_it?-2">What is it?</h4><ul>
+<li>Non-free</li>
+<li>A set of Analysis tools</li>
+</ul>
+<h4 id="How_to_test_it?-2">How to test it?</h4><p>Download Omnibug  extension for Chrome;</p>
+<h3 id="4-_Sizmek">4. Sizmek</h3><h4 id="What_is_it?-3">What is it?</h4><p>Sizmek is the world’s largest independent third-party ad server. And also you can use Sizmek tracking measure the effectiveness of the market campaign, e.g. how may clicks are coming from the advertisement.</p>
+<h4 id="How_to_test_it?-3">How to test it?</h4><p>Browse to , and turn the “testing” mode as “On”(<code>Do remember to &quot;Save&quot;</code>), then when going to the page with Sizemek tracking, there will be a new page shown for all the info sent to the mediamind server.</p>
+<p><img src="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/Sizmek.png" alt="Sizmek"></p>
+<h3 id="5-_Nielsen">5. Nielsen</h3><h4 id="What_is_it?-4">What is it?</h4><p>Nielsen study consumers in more than 100 countries to give you the most complete view of trends and habits worldwide.</p>
+<h4 id="How_to_test_it?-4">How to test it?</h4><p>Use Chrome extension - <code>Observepoint</code> to verify the neilsen tracking for applications pages.</p>
+
+      
+    </div>
+  
+    <footer class="article-footer">
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Comparison/">Comparison</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Page-Tracking/">Page Tracking</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tools/">Tools</a></li></ul>
+
+    </footer>
+  
+  </div>
+  
+</article>
+
+
+    
+      <article id="post-Travel" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/31/Travel/">我的出差1、2、3</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2015/12/31/Travel/" class="article-date">
+  <time datetime="2015-12-30T16:00:00.000Z" itemprop="datePublished">2015-12-31</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Test/">Test</a>
+  </div>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>看着一大波的出差贴，也勾起了我对这几年出差的回忆（虽然我现在还在出差）。尽管文笔不佳也想来叨叨下我的出差故事。。。</p>
+<h2 id="一个人的时光">一个人的时光</h2><h3 id="一个人，关键字：TWU，印度">一个人，关键字：TWU，印度</h3><p>2010年以毕业生身份入职TW，第一次坐飞机，第一次出国，第一次穿纱丽，第一次和外国人做朋友，第一次safari，第一次hiking, 第一次做tatoo，第一次坐auto，第一次踩牛屎，啊呀，太多的第一次都发生在印度班加罗尔TWU那六周了，回想那段日子，有焦虑有担心但更多的是好奇惊喜和不断的震撼。</p>
+<p>TWU的课程出乎我的想象，当时我们前2周在酒店上大课，后4周在班加罗尔办公室参与mini project。课程内容与学校课程有很大不同，让我印象最深刻的是乐高游戏，结对session。当然，上课形式也很多样，大家可以横躺竖卧地倒在地上听讲参与讨论，可以找个酒店花园凉亭上小课，也可以去户外做游戏体会合作精神，等等</p>
+<p><img src="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/TWU.jpg" alt="印度TWU"></p>
+<p>记得某次课后有幸参与到了班加罗尔办公室的一次hanna tattoo这项传统艺术，看着那些用神奇草指甲花叶子磨成的膏画出来的图，真的很震撼，话说，我人生中第一次tatoo陪了我几乎2周的时光。</p>
+<p><img src="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/Tattoo.jpg" alt="纹身"></p>
+<p>TWU有过一次hiking活动，大家坐大巴加步行到一个小湖边扎帐篷做游戏，其中一个游戏是大家分小组用竹竿和绳索做皮筏过河。没想到我们组划到湖中央的时候天空下起了暴雨，大家被迫上岸光脚冒着大雨跑回大本营，路上草地上到处都是混着雨水的牛便便，踩着的时候那个酥软啊。大家回去帐篷的时候大家都淋成了落汤鸡，永远难以忘记大家围住火堆聊天吃点心，火光闪烁在每个人的眼睛里的情景。</p>
+<p><img src="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/Hiking.jpg" alt="Hiking"></p>
+<p>TWU课程快结束时候在我们在酒吧举行了一个聚会，感觉像是参加成人礼，第一次喝洋酒，没把握住有点芒，后来几次被同学录像“嘲笑”呢。</p>
+<p><img src="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/Drink.jpg" alt="喝酒"></p>
+<h3 id="还是一个人，关键字：客户现场，悉尼">还是一个人，关键字：客户现场，悉尼</h3><p>从TWU回来机缘巧合（一个不长不短的故事）去了悉尼客户现场做项目，这次是在悉尼半年。英语不好，内向怕生，项目经验不丰富也阻挡不了“初生牛犊不怕虎”的气概，去之前因为错过了周内中国银行兑换澳元的时机，只能带着从另一位同事手里临时换来的100澳元毅然前往悉尼，现在想想真是胆大啊。</p>
+<p>在客户现场一切都是新鲜陌生富有挑战的，那是我真正意义的第一个项目。别提怎么去影响客户了，能听得懂日常沟通对我来说都是最大的挑战。但是那时候一直记得在郑大晔校时候资深同事说的“珍惜自己当菜鸟的时光”那句话，硬着头皮“不懂就问”，频繁地“确认”成为了那时候我的良方。</p>
+<p>那半年，除了在项目上的战战兢兢，还有值得一提的是我参加了墨尔本《specific by example》的培训，更系统地地接触到了测试设计，自动化测试等知识，那次体验对我受益良多。当然，我还有幸地参加了一次澳洲办公室的away day，session已然忘记，但是那时“work hard, play hard”的情景一直记忆深刻，因为那时的主题是夏威夷风，我还记得平时甚是严肃的程序员都换成女装妖娆的样子。</p>
+<p><img src="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/NBN.jpg" alt="NBN"></p>
+<p><img src="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/BlueMountain.jpg" alt="蓝山"></p>
+<h2 id="TW_Couple_两个人，关键字：成都，悉尼">TW Couple 两个人，关键字：成都，悉尼</h2><p>也是源于出差，我在西安也收获了自己的爱情。2012年7月到2013.3，我们一起去成都出差，那时候第一次和同事去悉尼客户现场接项目，我的内心是很忐忑的，短短六周把肚子里能掏出来的都倒出来了，各种会议各种协调，感觉特别没谱，好在当时有熊节每天和我们catchup，硬着头皮把项目接回来了。</p>
+<p><img src="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/OZ.jpg" alt="客户现场"></p>
+<p>在成都第一次参加了公司的P3项目－立人图书馆。对于这个饱含着理想和情怀的项目，当看到QQ邮件里关于立人被迫停止经营的时候，还是忍不住唏嘘不已。</p>
+<p><img src="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/P3.jpg" alt="立人图书馆"></p>
+<p>平生第一次公开跳舞献给了TW成都2012年会的舞台，同时也见识到了酷炫的cosplay。</p>
+<p><img src="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/Dance.jpg" alt="年会"></p>
+<p>一直记得离别时没来得及吃的那块蛋糕，还有同事朋友们的每一句祝福，现在每每看到这张照片，想到当时的场景，心里都是暖暖的。谢谢成都的各位兄弟姐妹。</p>
+<p><img src="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/Cake.jpg" alt="成都"></p>
+<h2 id="TW_Family_三个人，关键字：西安，我的第二故乡">TW Family 三个人，关键字：西安，我的第二故乡</h2><p>2014年12月，产假还没修完，但是我已经又在出差的路上了，不同的是，生活中我换了一个身份，身边多了一个小家伙，这次，我是真正拖家带口在出差了。</p>
+<p>遇到一个自己喜欢的项目，遇到一个发挥自己价值的团队让我小小的产后抑郁也渐渐消退，充实的工作，如饥似渴的学习让我每天上班的时间成就感满满。这次出差让我有了很多锻炼自己的机会，比如测试技术的积累，影响客户和coach新人的机会等等。同时也让我对于各种事件有了更深入的认识和思考，也促使自己不断的积累和总结。说实话，在一个平均年龄超过30的“Senior”不进步都难啊！:P</p>
+<p><img src="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/Team.jpg" alt="团队"></p>
+<p>这段时间里在我的监督和校对的辅助下，某人也完成自己的第一本书。这对我来说也算是个小小的成就吧。：）</p>
+<p>公寓在公司附近大大缩短了通勤时间，再加上新妈妈每天一个小时哺乳假让我在小家伙最需要我的时候最大限度地陪伴她长大。这一年让我遇到这么棒的团队，周末我们去过很多地方，摘草莓，户外烧烤，袁家村吃好吃的，壕鹏家聚餐等等都让出差多了许多温情的色彩。出差的路上也让我又机会结识不同文化的人， 比如我们组之前的南非同事，他真的解释了我很多疑问，比如南非宝宝是不是一出生就是黑皮肤，比如他们一撮撮的头发真不是自己编的吗，比如南非总统有几个老婆几个孩子，等等。总之，出差路上遇到了很多人，遇到了很多惊喜，</p>
+<p><img src="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/Building.jpg" alt="团队活动"></p>
+<p>这段出差的旅程还会继续，我依旧期待之后会有什么样的惊喜。</p>
+<p><em>最后，借用许生生同学文章的一句话作为结尾，因为这也是我心里最大的感触：</em></p>
+<p><em>“这几年的差旅，给予我最多的不是分分钟收拾好行李出发的技能，不是淡定面对所有离奇突发情况的强大心理，而是一种更棒的视角，让我能微笑着面对每一次项目结束的告别，面对每一次愉快聚会的散去，面对离家时候缱绻愁思，潇洒地一合掌：“各位，江湖再见！” 因为，我深深知道，所有告别的人，所有离开的地方，一定会江湖再会。到时候，会是更有趣的事情，更好的大家，全新的开始”</em></p>
+
+      
+    </div>
+  
+    <footer class="article-footer">
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Life/">Life</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ThoughtWorks/">ThoughtWorks</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Travel/">Travel</a></li></ul>
+
+    </footer>
+  
+  </div>
+  
+</article>
+
+
+    
+      <article id="post-Bug_Bash" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/06/23/Bug_Bash/">Bug Bash</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2015/06/23/Bug_Bash/" class="article-date">
+  <time datetime="2015-06-22T16:00:00.000Z" itemprop="datePublished">2015-06-23</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Test/">Test</a>
+  </div>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="什么是Bug_Bash？">什么是Bug Bash？</h3><p><strong>Bug Bash</strong> <a href="http://en.wikipedia.org/wiki/Bug_bash，也称为Bug大扫除，是软件测试的一个很重要的实践，是对日常测试的有效补充,它在很多互联网公司（比如微软，淘宝等）都是一项重要的测试实践。简单的说，Bug" target="_blank" rel="external">http://en.wikipedia.org/wiki/Bug_bash，也称为Bug大扫除，是软件测试的一个很重要的实践，是对日常测试的有效补充,它在很多互联网公司（比如微软，淘宝等）都是一项重要的测试实践。简单的说，Bug</a> Bash就是对产品找茬；具体来说，就是在产品稳定的阶段，选取一个特定时间段邀请一组不同角色和背景的人员在会议室里对被测产品找Bug。一旦发现问题后可以请熟知产品的观察员确定是否是Bug，对发现最多或者最严重Bug的人员给予一些奖励。项目组成员在搜集好所有Bug和潜在Bug的清单之后，全员进行Bug分析，制定出解决的方案并实施。</p>
+<h3 id="为什么在测试中我们会引入Bug_Bash呢？">为什么在测试中我们会引入Bug Bash呢？</h3><p>由于参与Bug Bash的人员有着不同的角色和背景，甚至来自不同的项目和领域，所以每个人都会通过自己的观察，结合自己的经验，给我们的测试工作带来更多的视角，帮助我们发现那些被我们忽视了的问题。因此通过Bug Bash，我们可以：</p>
+<ol>
+<li><strong>发现尽可能多的问题。</strong>对于确定是Bug的问题，项目组成员可以通过分析Bug产生的原因，避免类似的Bug再次出现。而有些发现的问题不一定就是Bug，可能是一些潜在的需求，我们同样可以分析这些来优化我们的产品。</li>
+<li><strong>了解不在预期之内的用户行为。</strong>通过了解这些用户行为，我们能分析出哪些用户旅程User Journey是需要添加进我们的测试场景中，甚至需要加入自动化测试的。</li>
+<li><strong>对于并发的测试，尤其是多用户同时执行不同的场景。</strong>大部分时间我们在测试产品时都是单人在操作，即使我们有性能测试来覆盖这些场景，但是通过Bug Bash，我们可以更好地接近用户真实使用产品的并发场景。</li>
+<li><strong>进行更多的用户测试User Testing。</strong>一般来说我们在开发中会不断地进行用户测试，来验证产品是符合用户习惯，以及开发方向是正确的。鉴于产品可能需要保密，并且使用Bug Bash可以用更小的代价，进行更多的用户测试，所以我们会不时地进行Bug Bash。</li>
+</ol>
+<h3 id="Bug_Bash除了给我们带来上述4点主要益处，还可以为我们带来一些附加的价值：">Bug Bash除了给我们带来上述4点主要益处，还可以为我们带来一些附加的价值：</h3><ol>
+<li><strong>帮助QA更深入了解系统。</strong>在测试过程中QA进行测试，会不断加深对于产品的理解；不过由于在Bug Bash中QA需要向其他人员描述产品，并规划不同的测试场景和目标，所以会对自己已有的产品知识进行更深入的梳理，而且通过Bug Bash最后的分析阶段，加深对于产品远景、目标和原则更进一步的理解。不同的QA之间也可以相互进行学习和交流。</li>
+<li><strong>宣传项目。</strong>通过Bug Bash，我们可以邀请不同部门，不同角色，不同背景的人员参与，所以无形中就向更多受众宣传了自己，对于项目获得更多资源，以及通过受众进一步影响更多的人。</li>
+<li><strong>引发更多关于产品的思考。</strong>根据Bug Bash搜集的问题列表，项目组成员会对这些问题进行集中讨论，并详细解释如何处理以及为什么这么处理，让项目组所有成员对于产品都各抒己见，而且通过这些讨论，引发更多的思考。</li>
+</ol>
+<h3 id="既然有如此多的益处，那我们如何组织Bug_Bash，还有哪些细节需要注意的呢？">既然有如此多的益处，那我们如何组织Bug Bash，还有哪些细节需要注意的呢？</h3><h3 id="1-_活动准备">1. 活动准备</h3><ul>
+<li><p>首先确保被测产品功能基本稳定。如果被测产品还处于不断出现Bug的开发早期或者中期，就不适合进行Bug Bash。因为如果进行Bug Bash，发现的大部分问题都是已知问题，并不能带来很大的价值。所以我们最好确保被测产品功能基本稳定，并且进行过性能测试和并发性的测试（至少可以支持并发操作）。</p>
+</li>
+<li><p>其次准备对应的测试设备。例如对于Web和桌面产品进行Bug Bash，我们需要准备足够的显示器和键盘，甚至椅子，来保证Bug Bash可以顺利进行；自然，对于测试移动App，我们也需要准备不同型号和操作系统的移动设备。</p>
+</li>
+<li><p>除此之外，我们需要准备产品的特性列表并且准备Bug Bash中参与人员需要完成的任务列表。这份任务列表一般会基于不同浏览器，不同平台，不同语言，不同功能模块，设计出针对每组参与人员需要完成的不同任务列表（具体实例见图1）。对于参与人员的分组，具体根据参与人数和特性列表来确定，可以一个人一个组，两个人结对，或者两个测试人员和组内一个QA结对（这么做是因为这样可以及时确定发现的Bug是否有效）。当然如果组内QA有限，可以让QA充当全场的观察员动态协调。<br><img src="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/BugBash.png" alt="图1 － 根据产品的特性列表制定的Bug Bash任务列表"></p>
+</li>
+</ul>
+<p>图1 － 根据产品的特性列表制定的Bug Bash任务列表</p>
+<ul>
+<li><p>同时，我们还需要准备好测试环境和测试账号（如果涉及角色权限等功能的任务），并把这些测试环境信息通过邮件告知参与人员，或者张贴在Bug Bash活动场地附近，以便Bug Bash中所有人可以随时获取这些信息。</p>
+</li>
+<li><p>我们还需要设计一个Bug报告模版并告知参与人员。这么做的目的在于方便参与人员及时记录发现的Bug，也便于我们在Bug Bash后重现和分析bug。因此Bug报告模版格式尽量简单清晰，最好能有截图来帮助说明Bug。Bug报告可以是电子的也可以是纸质的，需要注意的是，尽量保证Bug Bash的参与人员可以方便地访问模版，从而进行Bug记录。</p>
+</li>
+<li><p>重中之重的是确定参与Bug Bash的人员。这些成员既可以包括组内各种角色，比如开发人员，业务分析人员设计人员，项目经理，还可以包括产品经理，客户；当然，邀请一些对产品不太了解的人员也是很重要的，因为他们更能从一个新鲜的视角来测试产品，比如公司销售，前台或者其他组的开发和测试人员。在Bug Bash举办前，我们需要确保有足够数量的人员参加，尽可能地提高举办Bug Bash的投入产出比。</p>
+</li>
+<li><p>我们还需要确定进行Bug Bash的时间和时长。在项目中后期，我们通常会以两周或者一个月的频率进行Bug Bash，比如利用午休时间进行1～1.5小时的Bug Bash。当然不同的项目Bug Bash时长和举行时间各自不同，但是原则上，选择尽量适合所有参与人员的时间段和时长。</p>
+</li>
+<li><p>除此之外，确定举行Bug Bash的活动场地。我们可以选择会议室，来帮助参与人员专注于发现产品Bug，而且由于会议室远离常规工作的场所，有助于为参与人员提供一种新鲜的视角。当然，如果基于宣传的考虑，我们也可以选择公共区域作为活动场地。</p>
+</li>
+<li><p>在确定了Bug Bash的参与人员，时间和地点之后，应尽早向所有参与人员发出邀请，确保参与人员都有时间参与。</p>
+</li>
+<li><p>最后，在Bug Bash开始之前我们准备一些小奖励（比如酸奶，巧克力和小礼品），等Bug Bash后发放给每位参与者，以感谢他们对于活动的支持。</p>
+</li>
+</ul>
+<h3 id="2-_活动中">2. 活动中</h3><ul>
+<li><p>在Bug Bash正式开始前，我们首先要欢迎并感谢所有参与人员，说明本次测试目的、时间、流程、规范和奖励规则等，使所有人都明确Bug Bash会如何进行，以及他们在活动中需要如何测试和记录Bug。随后，我们向每个测试组分发需要测试的任务列表、测试环境和账号，以及纸质或者电子的Bug报告模版。</p>
+</li>
+<li><p>当正式开始Bug Bash后，每个测试组中的两位参与人员需要共用一个显示器和键盘（或者移动设备）进行结对测试。对于确定的Bug，测试组需要记录其重现步骤，并且记录在Bug报告上。如果条件允许，还需要让测试组在测试报告中添加对应的截图。对于不确定的问题，作为观察员的QA可以适时参与确认，减少测试组在一个Bug上花费的时间。</p>
+</li>
+<li><p>与此同时，QA作为观察员，除了在测试组中进行协助并帮助确认发现的Bug是否有效之外，还需要观察每个测试组的行为，必要时还需要了解他们这么做的原因。如果条件允许，我们还可以通过录制视频来记录每个测试组的操作过程，以便后续的Bug分析和用户测试分析。如果测试组在完成某项特定的任务时有不能解决的争议时，如果QA作为观察员也没有办法说服双方，那可以暂停并切换到别的任务。此时我们也需要记录任务切换的原因和相应的细节信息。</p>
+</li>
+<li><p>最后，作为观察员的QA可以记录测试组完成特定任务所用的时间，以便在Bug Bash后对用户测试进行分析时，了解对应功能的可用性和易用性。</p>
+</li>
+</ul>
+<h3 id="3-_活动总结">3. 活动总结</h3><ul>
+<li><p>准时结束Bug Bash，并对参与者赠送一些小礼物（比如酸奶，巧克力等）来感谢大家参与测试。我们还需要对发现最多Bug或者发现最严重Bug的参与人员给予特殊的物质奖励，例如具有团队Logo的徽章或者T恤等。</p>
+</li>
+<li><p>当然作为组织者，我们还要负责搜集并整理所有发现的Bug。具体来说，首先合并重复的Bug，并且验证它们的重现步骤，尽可能附上对应的截图。最后，组织项目组所有成员就是否需要修复Bug，Bug优先级达成一致意见，这样便于尽早解决高优先级的Bug。</p>
+</li>
+<li><p>对于那些需要解决的Bug，我们还要考虑是否需要把它们添加到手动测试用例集和自动化测试中。进而考虑是否需要把新添加的自动化测试用例／场景和已有的自动化测试用例／场景进行合并，以保证所有的测试都是分层的，而且是符合测试金字塔的。</p>
+</li>
+<li><p>针对所有确定的Bug要分析其产生的原因，制定相应的计划以避免再次产生类似的Bug。</p>
+</li>
+<li><p>在制定了对于Bug的解决方案和计划之后，我们可以通过邮件或者其他方式，如故事卡墙或者缺陷墙，告之所有参与人员。这样不仅可以让参与人员更有参与感，更重要的是使更多人监督我们执行这些计划。</p>
+</li>
+<li><p>最后，我们还可以整理Bug Bash中收集到的数据（测试时长，录制的操作视频等），检查是否功能设计不合理，导致用户需要很长时间才能完成操作，从而做出产品改进。</p>
+</li>
+</ul>
+<h3 id="千里之行，始于足下">千里之行，始于足下</h3><p>也许你觉得在项目中实践Bug Bash很耗时间和精力，而且不一定会得到领导的支持。其实我们可以在更小的范围内，例如只是项目组的测试人员中开展Bug Bash，通过成果展示来一点一点地得到各方面的支持。</p>
+<p>虽然以上是笔者在敏捷软件测试中总结的Bug Bash实践，但是Bug Bash的形式并不局限于特定的开发方式，所以我们可以在自己的项目中采用这个实践，来帮助我们促进产品日臻完善。</p>
+
+      
+    </div>
+  
+    <footer class="article-footer">
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Agile/">Agile</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Bug-Bash/">Bug Bash</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Practice/">Practice</a></li></ul>
+
+    </footer>
+  
+  </div>
+  
+</article>
+
+
+    
+      <article id="post-BQA" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2012/09/26/BQA/">What lessons I learned as a Q-BA?</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2012/09/26/BQA/" class="article-date">
+  <time datetime="2012-09-25T16:00:00.000Z" itemprop="datePublished">2012-09-26</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Test/">Test</a>
+  </div>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>Q-BA here is referring new BA who acted as a QA before, just like me…</strong></p>
+<p>I acts as QA in the last two years, and although I tried to do some stuff related to business, however, it is slightly different when I acts as a full-time BA in the current project.</p>
+<p>In one word, I think the difference is, as QA, I accept the fact that all the behaviors is well-considered and good enough, then the only think I need to check is if they are working well.</p>
+<p>However, as BA, I think I should be more critical of the proposed option, and try to find if it is really suitable for the business needs.</p>
+<h3 id="Lesson1:_Does_sad_path_really_matter?">Lesson1: Does sad path really matter?</h3><p>From QA perspective, especially when most of happy path is guaranteed by kinds of tests, then finding evil scenarios to break the application is really important in my QA career.</p>
+<p>So at the beginning of the BA career, I always tend to find out all sad paths for the scenario.</p>
+<p><strong>Example:</strong></p>
+<p><strong>When</strong> I am working on the story elaboration of one story” save and send email”, which is about asking the user email, then send the product info to the user via email.</p>
+<p><strong>Then</strong></p>
+<p><strong>From QA perspective,</strong></p>
+<pre><code>I mainly focusing <span class="function_start"><span class="keyword">on</span></span> handling <span class="keyword">the</span> bad path,
+how <span class="keyword">about</span> <span class="keyword">it</span> <span class="keyword">is</span> empty, how <span class="keyword">about</span> <span class="keyword">if</span> <span class="keyword">it</span> <span class="keyword">is</span> too long, how <span class="keyword">about</span> <span class="keyword">if</span> <span class="keyword">it</span> <span class="keyword">is</span> <span class="keyword">not</span> well-formatted
+...
+</code></pre><p><strong>From BA perspective,</strong></p>
+<pre><code>First thing <span class="keyword">is</span> <span class="keyword">to</span> see <span class="keyword">if</span> <span class="keyword">it</span> makes sense <span class="keyword">to</span> ask user <span class="keyword">to</span> input <span class="keyword">it</span> again,
+how <span class="keyword">about</span> pre-populate <span class="keyword">it</span> <span class="keyword">since</span> <span class="keyword">it</span> <span class="keyword">is</span> asked <span class="keyword">before</span>? 
+...
+</code></pre><h3 id="Lesson2:_Do_not_be_pulled_into_details_too_much!">Lesson2: Do not be pulled into details too much!</h3><p>From QA perspective, I did many scenario testing(system capability for user to achieve specific goal) and story testing(provide/get fast feedback along the story development process). </p>
+<p>So I prefer to go to details as per each scenario, and try to evolve more detailed scenario.</p>
+<p>Then from BA perspective, the whole part is more important than focusing on the small part and detailed information.</p>
+<p><strong>Example:</strong></p>
+<p><strong>Given</strong> we are working on the project in the initiate phase</p>
+<p><strong>When</strong> prototype comes passed from Business to us for reference</p>
+<p><strong>Then</strong></p>
+<p><strong>From QA perspective,</strong></p>
+<pre><code>I mainly find flaws as per each section,<span class="instruction"> and </span>to<span class="instruction"> check </span>the text field<span class="instruction"> and </span>buttons behaviors.
+I mainly find<span class="instruction"> if </span>any spelling errors around all the wording<span class="instruction"> and </span>text
+<span class="keyword">.</span>..
+</code></pre><p><strong>From BA perspective,</strong></p>
+<pre><code>[I need <span class="keyword">to</span> think more <span class="keyword">like</span> UX]
+ <span class="keyword">Do</span> we need <span class="keyword">to</span> schedule user testing <span class="keyword">or</span> expert review <span class="keyword">of</span> the prototype <span class="keyword">to</span> see <span class="keyword">if</span> the design makes sense?
+[I need <span class="keyword">to</span> think more <span class="keyword">like</span> Dev]
+ What<span class="comment">'s the integration points among the system with other systems?</span>
+ <span class="keyword">If</span> the wording <span class="keyword">and</span> <span class="keyword">text</span> need <span class="keyword">to</span> be approved <span class="keyword">by</span> legal team?
+ ...
+</code></pre><h3 id="Lesson3:_Go_directly_to_the_business_for_any_need">Lesson3: Go directly to the business for any need</h3><p>From QA perspective, sometimes I will firstly go to BA if some puzzles happen.And then go to business if necessary.</p>
+<p>Then from BA perspective, if any puzzle happen, go to the people you need to ask for answers. Don’t Wait!</p>
+<h3 id="Lesson4:_Facilitation_skills_matter_a_lot">Lesson4: Facilitation skills matter a lot</h3><p>As a BA, the facilitation skill is important to gather the clarification and solution.</p>
+<p>There are many scenarios you need to facilitate the meeting at the inception phase of the project, or during daily business discussion, IPM and meetings.</p>
+<p><em>I just realized the importance, and I think the book <the secret="" of="" facilitation=""> is really cool, thanks kangkang’s recommendation.</the></em></p>
+
+      
+    </div>
+  
+    <footer class="article-footer">
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BA/">BA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Lessons-Learned/">Lessons Learned</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/QA/">QA</a></li></ul>
+
+    </footer>
+  
+  </div>
+  
+</article>
+
+
+    </section>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Yang Xuemin&nbsp;
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, theme by <a href="http://github.com/ppoffice">PPOffice</a>
+    </div>
+  </div>
+</footer>
+    
+
+<script src="/js/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>

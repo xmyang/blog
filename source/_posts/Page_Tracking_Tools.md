@@ -31,15 +31,15 @@ There are 5 common tracking tools in the market:
 
 1. Use GA real time feature to verify the page view and events.
 
-   [GA](https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/GA.png)
+![GA](https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/GA.png)
 
 2. Download [Omnibug](https://chrome.google.com/webstore/detail/omnibug/bknpehncffejahipecakbfkomebjmokl) extension for Chrome
 
-   [Omnibug](https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/Omnibug.png)
+![Omnibug](https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/Omnibug.png)
 
 3. Download [Google Analytics Debugger](https://chrome.google.com/webstore/detail/google-analytics-debugger/jnkmfdileelhofjcijamephohjechhna) and check the GA tracking in the javascript console in the browser
 
-   [Google Analytics Debugger](https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/GADebugger.png)
+![Google Analytics Debugger](https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/GADebugger.png)
 
 ###2. krux
 
@@ -81,7 +81,7 @@ Sizmek is the world’s largest independent third-party ad server. And also you 
  
 Browse to , and turn the "testing" mode as "On"(`Do remember to "Save"`), then when going to the page with Sizemek tracking, there will be a new page shown for all the info sent to the mediamind server.
 
-[Sizmek](https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/Sizmek.png)
+![Sizmek](https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/Sizmek.png)
 
 ###5. Nielsen
  

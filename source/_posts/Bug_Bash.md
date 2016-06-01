@@ -36,7 +36,8 @@ comments: true
 * 其次准备对应的测试设备。例如对于Web和桌面产品进行Bug Bash，我们需要准备足够的显示器和键盘，甚至椅子，来保证Bug Bash可以顺利进行；自然，对于测试移动App，我们也需要准备不同型号和操作系统的移动设备。
 
 * 除此之外，我们需要准备产品的特性列表并且准备Bug Bash中参与人员需要完成的任务列表。这份任务列表一般会基于不同浏览器，不同平台，不同语言，不同功能模块，设计出针对每组参与人员需要完成的不同任务列表（具体实例见图1）。对于参与人员的分组，具体根据参与人数和特性列表来确定，可以一个人一个组，两个人结对，或者两个测试人员和组内一个QA结对（这么做是因为这样可以及时确定发现的Bug是否有效）。当然如果组内QA有限，可以让QA充当全场的观察员动态协调。
-![图1 － 根据产品的特性列表制定的Bug Bash任务列表](https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/Bug_Bash.png)
+![图1 － 根据产品的特性列表制定的Bug Bash任务列表](https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/BugBash.png)
+
 图1 － 根据产品的特性列表制定的Bug Bash任务列表
 
 * 同时，我们还需要准备好测试环境和测试账号（如果涉及角色权限等功能的任务），并把这些测试环境信息通过邮件告知参与人员，或者张贴在Bug Bash活动场地附近，以便Bug Bash中所有人可以随时获取这些信息。
