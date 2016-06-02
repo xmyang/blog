@@ -31,15 +31,12 @@ So at the beginning of the BA career, I always tend to find out all sad paths fo
 
 **From QA perspective,**
 
-	I mainly focusing on handling the bad path,
-	how about it is empty, how about if it is too long, how about if it is not well-formatted
+I mainly focusing on handling the bad path, how about it is empty, how about if it is too long, how about if it is not well-formatted
 	...
       
 **From BA perspective,**
 
-	First thing is to see if it makes sense to ask user to input it again,
-	how about pre-populate it since it is asked before? 
-    ...
+First thing is to see if it makes sense to ask user to input it again, how about pre-populate it since it is asked before? ...
 
 ###Lesson2: Do not be pulled into details too much!
 
@@ -59,18 +56,21 @@ Then from BA perspective, the whole part is more important than focusing on the 
 
 **From QA perspective,**
 
-	I mainly find flaws as per each section, and to check the text field and buttons behaviors.
-	I mainly find if any spelling errors around all the wording and text
-	...
+I mainly find flaws as per each section, and to check the text field and buttons behaviors.
+
+I mainly find if any spelling errors around all the wording and text...
 	
 **From BA perspective,**
 
-	[I need to think more like UX]
-     Do we need to schedule user testing or expert review of the prototype to see if the design makes sense?
-    [I need to think more like Dev]
-     What's the integration points among the system with other systems?
-     If the wording and text need to be approved by legal team?
-     ...
+*[I need to think more like UX]*
+
+Do we need to schedule user testing or expert review of the prototype to see if the design makes sense?
+
+*[I need to think more like Dev]*
+
+What's the integration points among the system with other systems?
+
+If the wording and text need to be approved by legal team?...
  
 ###Lesson3: Go directly to the business for any need
 
