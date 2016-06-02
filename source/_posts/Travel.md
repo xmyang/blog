@@ -1,7 +1,7 @@
 title: 我的出差1、2、3
 date: 2015-12-31
 categories:
-- Test
+- Life
 tags:
 - Travel
 - ThoughtWorks

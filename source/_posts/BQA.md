@@ -1,7 +1,7 @@
 title: What lessons I learned as a Q-BA?
 date: 2012-09-26
 categories:
-- Test
+- Work
 tags:
 - BA
 - QA

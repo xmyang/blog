@@ -160,7 +160,7 @@
 </a>
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/Test/">Test</a>
+    <a class="article-category-link" href="/categories/Life/">Life</a>
   </div>
 
       
@@ -322,6 +322,494 @@
 
 
     
+      <article id="post-HTML_CSS_Study2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/05/06/HTML_CSS_Study2/">html/css学习笔记（二）</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2013/05/06/HTML_CSS_Study2/" class="article-date">
+  <time datetime="2013-05-05T16:00:00.000Z" itemprop="datePublished">2013-05-06</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Work/">Work</a>
+  </div>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>接上篇html/css 学习笔记（一），这段时间项目和个人事情明显加多，进度变慢了，但是得提醒自己不能懒惰，继续总结。。。</p>
+<p>这段时间其实还在折腾Gmail template, 从页面来看，变化不大，最多的是是明白html代码架构，更熟练地应用各个属性等。有点痛苦的感觉，也逐渐明白什么叫做扣html。</p>
+<p>以下仅仅是我学习到的几个知识点，具体内容和原理都没有详细表述。因为其实这些知识点google得到的结果更准确些：）</p>
+<h3 id="1-_Gmail_template继续重构，达到以下几个目标">1. Gmail template继续重构，达到以下几个目标</h3><h4 id="1）css_module">1）css module</h4><p>推荐阅读  <a href="http://smacss.com/book/type-module" target="_blank" rel="external">http://smacss.com/book/type-module</a> </p>
+<pre><code><span class="tag">new_message</span> <span class="tag">li</span> <span class="rules">{
+<span class="rule"><span class="attribute">text-align</span>:<span class="value"> left</span></span>;
+<span class="rule"><span class="attribute">margin</span>:<span class="value"><span class="number">0px</span></span></span>;
+<span class="rule"><span class="attribute">padding</span>:<span class="value"><span class="number">10px</span></span></span>;
+}</span>
+<span class="class">.new_message</span> <span class="tag">li</span><span class="class">.title</span><span class="rules">{
+<span class="rule"><span class="attribute">background-color</span>:<span class="value"> black</span></span>;
+<span class="rule"><span class="attribute">color</span>:<span class="value"> white</span></span>;
+}</span>
+<span class="class">.new_message</span> <span class="tag">li</span><span class="class">.recipients</span><span class="rules">{
+<span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#848484</span></span></span>;
+<span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">1px</span> solid <span class="hexcolor">#848484</span></span></span>;
+<span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">10px</span></span></span>;
+}</span>
+</code></pre><h4 id="2）加入Common-css/_Reset-css">2）加入Common.css/ Reset.css</h4><p>跨浏览器神马的最讨厌了，有木有？那就用reset吧</p>
+<p>关心reset历史或者八卦的可以移步 <a href="http://ued.taobao.com/blog/2009/03/reset_css_a/" target="_blank" rel="external">http://ued.taobao.com/blog/2009/03/reset_css_a/</a><br>目前比较全的CSS重设(reset)方法总结 <a href="http://blog.bingo929.com/css-reset-collection.html" target="_blank" rel="external">http://blog.bingo929.com/css-reset-collection.html</a></p>
+<p>一段相同的css出现了n多次，代码很冗余，有木有？ 那就把公用的部分抽出来放到common.css里吧</p>
+<h3 id="2-_CSS_Image_Sprites">2. CSS Image Sprites</h3><p>页面的每个图片都是一个http request,所以如何提高页面加载速度，我们需要把页面中的图片进行组合以较少请求，详情请参考阅读 <a href="http://css-tricks.com/css-sprites/" target="_blank" rel="external">http://css-tricks.com/css-sprites/</a> </p>
+<h3 id="3-_UI选颜色">3. UI选颜色</h3><p>如果你也遇到了每次想设置背景颜色，但是不知道具体值，只能写”white/black”的话，请参考阅读 <a href="http://html-color-codes.info/chinese/" target="_blank" rel="external">http://html-color-codes.info/chinese/</a> </p>
+<h3 id="另外，在做项目的时候，总结了2个知识点，分享给大家：">另外，在做项目的时候，总结了2个知识点，分享给大家：</h3><h4 id="1-clear:both的妙用">1.clear:both的妙用</h4><p>如在DIV + CSS设计网页中，经常需要设置多个DIV并列排列，这个时候就需要使用float来实现，但问题出现了，当前面并列的多个 DIV总宽度不足100%，下面的的DIV就很可能向上提，和上一行的并列的DIV在同一行，这不是我们想要的结果。使用Clear属性正好可以解决这一问题。</p>
+<h4 id="2-_@font-face">2. @font-face</h4><p><a href="http://www.smashingmagazine.com/2011/03/02/the-font-face-rule-revisited-and-useful-tricks/" target="_blank" rel="external">http://www.smashingmagazine.com/2011/03/02/the-font-face-rule-revisited-and-useful-tricks/</a></p>
+<h4 id="3-_width,_height如果可以少用就少用，_float:_left也要少用，涉及到调浏览器时候的痛苦。">3. width, height如果可以少用就少用， float: left也要少用，涉及到调浏览器时候的痛苦。</h4><h4 id="4-_如何让链接a_没有下划线，text-decroation">4. 如何让链接a 没有下划线，text-decroation</h4><h4 id="5-_能去掉不必要的div就尽量去掉——让代码更加清爽">5. 能去掉不必要的div就尽量去掉——让代码更加清爽</h4><h4 id="6-_Background—-设置Button/page_background">6. Background—-设置Button/page background</h4><p><img src="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/Homework_Gmail.png" alt="Homework: Gmail"></p>
+
+      
+    </div>
+  
+    <footer class="article-footer">
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/">HTML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Study/">Study</a></li></ul>
+
+    </footer>
+  
+  </div>
+  
+</article>
+
+
+    
+      <article id="post-HTML_CSS_Study1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/04/11/HTML_CSS_Study1/">html/css学习笔记（一）</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2013/04/11/HTML_CSS_Study1/" class="article-date">
+  <time datetime="2013-04-10T16:00:00.000Z" itemprop="datePublished">2013-04-11</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Work/">Work</a>
+  </div>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>之前也学过几天html/css，但是这2个星期里自我感觉进步最快，简单总结下。。。</p>
+<h3 id="一、循序渐进之html/css">一、循序渐进之html/css</h3><ul>
+<li>ul/li ol/li dl/dt/dd</li>
+<li>block inline元素</li>
+<li>box model—-padding margin</li>
+<li>class VS  id</li>
+<li>clear  </li>
+<li>position</li>
+<li>media queries</li>
+</ul>
+<h3 id="二、必杀技">二、必杀技</h3><ul>
+<li>clearfix 比如当父元素no float, 子元素float, 并且高度大于父元素时，这样父元素无法被撑开，可用该必杀技</li>
+<li>position: relative 比如想解决radiobutton 图标和字不在一行的问题</li>
+<li>margin: 0 auto  比如解决横向居中的问题</li>
+<li>visibility:hidden 和 display:none的使用场景  </li>
+</ul>
+<h3 id="三、推荐一个无敌网站">三、推荐一个无敌网站</h3><p><a href="http://learnlayout.com/" target="_blank" rel="external">http://learnlayout.com/</a> 超级适合学前端开发的新手</p>
+<h3 id="四、我的作业：">四、我的作业：</h3><p><img src="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/Homework.png" alt="Gmail"></p>
+<p>gmail.html Html代码</p>
+<pre><code><span class="doctype">&lt;!Doctype html&gt;</span>  
+<span class="tag">&lt;<span class="title">html</span>&gt;</span>  
+<span class="tag">&lt;<span class="title">head</span>&gt;</span>  
+    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"Content-Type"</span> <span class="attribute">content</span>=<span class="value">"text/html; charset=UTF-8"</span>&gt;</span>  
+    <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"gmail.css"</span>&gt;</span>  
+<span class="tag">&lt;/<span class="title">head</span>&gt;</span>  
+<span class="tag">&lt;<span class="title">body</span>&gt;</span>  
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"skin"</span>&gt;</span>  
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"header"</span>&gt;</span>  
+            <span class="tag">&lt;<span class="title">img</span> <span class="attribute">class</span>=<span class="value">"logo"</span> <span class="attribute">src</span>=<span class="value">"Gmail_logo.png"</span>/&gt;</span>  
+        <span class="comment">&lt;!-- &lt;div class="input_wrapper"&gt; --&gt;</span>  
+            <span class="tag">&lt;<span class="title">input</span> <span class="attribute">class</span>=<span class="value">"input"</span>/&gt;</span>  
+        <span class="comment">&lt;!-- &lt;/div&gt; --&gt;</span>  
+        <span class="comment">&lt;!-- &lt;div class="search_button_wrapper"&gt; --&gt;</span>  
+            <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">value</span>=<span class="value">"Search"</span> <span class="attribute">class</span>=<span class="value">"search_button"</span>/&gt;</span>  
+        <span class="comment">&lt;!-- &lt;/div&gt; --&gt;</span>  
+            <span class="tag">&lt;<span class="title">p</span> <span class="attribute">class</span>=<span class="value">"user"</span>&gt;</span>xmyang1221@gmail.com<span class="tag">&lt;/<span class="title">p</span>&gt;</span>  
+        <span class="comment">&lt;!-- &lt;div style="clear:both;"&gt;  
+        &lt;/div&gt; --&gt;</span>  
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>  
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"left_pannel"</span>&gt;</span>  
+        <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">value</span>=<span class="value">"Compose"</span> <span class="attribute">class</span>=<span class="value">"compose"</span>&gt;</span>  
+        <span class="tag">&lt;<span class="title">div</span>&gt;</span>  
+            <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ul"</span>&gt;</span>  
+                <span class="tag">&lt;<span class="title">li</span>&gt;</span>Inbox<span class="tag">&lt;/<span class="title">li</span>&gt;</span>  
+                <span class="tag">&lt;<span class="title">li</span>&gt;</span>Starred<span class="tag">&lt;/<span class="title">li</span>&gt;</span>  
+                <span class="tag">&lt;<span class="title">li</span>&gt;</span>Important<span class="tag">&lt;/<span class="title">li</span>&gt;</span>  
+                <span class="tag">&lt;<span class="title">li</span>&gt;</span>Sent Mail<span class="tag">&lt;/<span class="title">li</span>&gt;</span>  
+                <span class="tag">&lt;<span class="title">li</span>&gt;</span>Drafts<span class="tag">&lt;/<span class="title">li</span>&gt;</span>  
+                <span class="tag">&lt;<span class="title">li</span>&gt;</span>Backlog<span class="tag">&lt;/<span class="title">li</span>&gt;</span>  
+            <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>  
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>  
+        <span class="tag">&lt;<span class="title">div</span>&gt;</span>  
+            <span class="tag">&lt;<span class="title">hr</span> <span class="attribute">class</span>=<span class="value">"hr"</span>&gt;</span>  
+            <span class="tag">&lt;/<span class="title">hr</span>&gt;</span>  
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>  
+        <span class="tag">&lt;<span class="title">div</span>&gt;</span>  
+            <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ul"</span>&gt;</span>  
+                <span class="tag">&lt;<span class="title">li</span>&gt;</span>xiaoli<span class="tag">&lt;/<span class="title">li</span>&gt;</span>  
+                <span class="tag">&lt;<span class="title">li</span>&gt;</span>xiaohong<span class="tag">&lt;/<span class="title">li</span>&gt;</span>  
+                <span class="tag">&lt;<span class="title">li</span>&gt;</span>xiaohe<span class="tag">&lt;/<span class="title">li</span>&gt;</span>  
+                <span class="tag">&lt;<span class="title">li</span>&gt;</span>xiaozhao<span class="tag">&lt;/<span class="title">li</span>&gt;</span>  
+                <span class="tag">&lt;<span class="title">li</span>&gt;</span>xiaoli<span class="tag">&lt;/<span class="title">li</span>&gt;</span>  
+                <span class="tag">&lt;<span class="title">li</span>&gt;</span>xiaoxiao<span class="tag">&lt;/<span class="title">li</span>&gt;</span>  
+            <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>  
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>      
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>  
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"right_pannel"</span>&gt;</span>  
+        <span class="tag">&lt;<span class="title">dl</span>&gt;</span>  
+            <span class="tag">&lt;<span class="title">dt</span>&gt;</span> xiaoli<span class="tag">&lt;/<span class="title">dt</span>&gt;</span>  
+            <span class="tag">&lt;<span class="title">dd</span> <span class="attribute">class</span>=<span class="value">"subject"</span>&gt;</span> welcome to TW<span class="tag">&lt;/<span class="title">dd</span>&gt;</span>  
+            <span class="tag">&lt;<span class="title">dd</span> <span class="attribute">class</span>=<span class="value">"time"</span>&gt;</span>Apr,8th,2013<span class="tag">&lt;/<span class="title">dd</span>&gt;</span>  
+        <span class="tag">&lt;/<span class="title">dl</span>&gt;</span>  
+        <span class="tag">&lt;<span class="title">dl</span>&gt;</span>  
+            <span class="tag">&lt;<span class="title">dt</span>&gt;</span> Xiaoli<span class="tag">&lt;/<span class="title">dt</span>&gt;</span>  
+            <span class="tag">&lt;<span class="title">dd</span> <span class="attribute">class</span>=<span class="value">"subject"</span>&gt;</span> TW policy<span class="tag">&lt;/<span class="title">dd</span>&gt;</span>  
+            <span class="tag">&lt;<span class="title">dd</span> <span class="attribute">class</span>=<span class="value">"time"</span>&gt;</span>Apr,8th,2013<span class="tag">&lt;/<span class="title">dd</span>&gt;</span>  
+        <span class="tag">&lt;/<span class="title">dl</span>&gt;</span>  
+        <span class="tag">&lt;<span class="title">dl</span>&gt;</span>  
+            <span class="tag">&lt;<span class="title">dt</span>&gt;</span> Xiaoli<span class="tag">&lt;/<span class="title">dt</span>&gt;</span>  
+            <span class="tag">&lt;<span class="title">dd</span> <span class="attribute">class</span>=<span class="value">"subject"</span>&gt;</span> TW policy<span class="tag">&lt;/<span class="title">dd</span>&gt;</span>  
+            <span class="tag">&lt;<span class="title">dd</span> <span class="attribute">class</span>=<span class="value">"time"</span>&gt;</span>Apr,8th,2013<span class="tag">&lt;/<span class="title">dd</span>&gt;</span>  
+        <span class="tag">&lt;/<span class="title">dl</span>&gt;</span>  
+        <span class="tag">&lt;<span class="title">dl</span>&gt;</span>  
+            <span class="tag">&lt;<span class="title">dt</span>&gt;</span> Xiaoli<span class="tag">&lt;/<span class="title">dt</span>&gt;</span>  
+            <span class="tag">&lt;<span class="title">dd</span> <span class="attribute">class</span>=<span class="value">"subject"</span>&gt;</span> TW policy<span class="tag">&lt;/<span class="title">dd</span>&gt;</span>  
+            <span class="tag">&lt;<span class="title">dd</span> <span class="attribute">class</span>=<span class="value">"time"</span>&gt;</span>Apr,8th,2013<span class="tag">&lt;/<span class="title">dd</span>&gt;</span>  
+        <span class="tag">&lt;/<span class="title">dl</span>&gt;</span>  
+        <span class="tag">&lt;<span class="title">dl</span>&gt;</span>  
+            <span class="tag">&lt;<span class="title">dt</span>&gt;</span> Xiaoli<span class="tag">&lt;/<span class="title">dt</span>&gt;</span>  
+            <span class="tag">&lt;<span class="title">dd</span> <span class="attribute">class</span>=<span class="value">"subject"</span>&gt;</span> TW policy<span class="tag">&lt;/<span class="title">dd</span>&gt;</span>  
+            <span class="tag">&lt;<span class="title">dd</span> <span class="attribute">class</span>=<span class="value">"time"</span>&gt;</span>Apr,8th,2013<span class="tag">&lt;/<span class="title">dd</span>&gt;</span>  
+        <span class="tag">&lt;/<span class="title">dl</span>&gt;</span>  
+        <span class="tag">&lt;<span class="title">dl</span>&gt;</span>  
+            <span class="tag">&lt;<span class="title">dt</span>&gt;</span> Xiaoli<span class="tag">&lt;/<span class="title">dt</span>&gt;</span>  
+            <span class="tag">&lt;<span class="title">dd</span> <span class="attribute">class</span>=<span class="value">"subject"</span>&gt;</span> TW policy<span class="tag">&lt;/<span class="title">dd</span>&gt;</span>  
+            <span class="tag">&lt;<span class="title">dd</span> <span class="attribute">class</span>=<span class="value">"time"</span>&gt;</span>Apr,8th,2013<span class="tag">&lt;/<span class="title">dd</span>&gt;</span>  
+        <span class="tag">&lt;/<span class="title">dl</span>&gt;</span>  
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>  
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"new_message"</span>&gt;</span>  
+            <span class="tag">&lt;<span class="title">ul</span>&gt;</span>  
+                <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"title"</span>&gt;</span>New Message<span class="tag">&lt;/<span class="title">li</span>&gt;</span>  
+                <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"recipients:"</span>&gt;</span>Recipients<span class="tag">&lt;/<span class="title">li</span>&gt;</span>  
+                <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"subject:"</span>&gt;</span>Subject<span class="tag">&lt;/<span class="title">li</span>&gt;</span>  
+                <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"body"</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>  
+                <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"submit"</span>&gt;</span>  
+                    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">value</span>=<span class="value">"Send"</span>&gt;</span>  
+                <span class="tag">&lt;/<span class="title">li</span>&gt;</span>  
+            <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>  
+
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>  
+    <span class="tag">&lt;<span class="title">div</span>&gt;</span>   
+<span class="tag">&lt;/<span class="title">body</span>&gt;</span>  
+<span class="tag">&lt;/<span class="title">html</span>&gt;</span>  
+</code></pre><p>gmail.css Java代码</p>
+<pre><code><span class="class">.skin</span><span class="rules">{  
+<span class="comment">/*max-width: 800px; 
+margin: 0 auto*/</span>  
+}</span>  
+    <span class="class">.header</span><span class="rules">{  
+    <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">50px</span></span></span>;  
+    <span class="rule"><span class="attribute">border</span>:<span class="value"><span class="number">1px</span> solid grey</span></span>;  
+    <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#D8D8D8</span>  
+}  
+
+.logo{  
+    display: block</span></span>;  
+    <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">50px</span></span></span>;  
+    <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">200px</span></span></span>;  
+    <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;  
+}</span>  
+
+<span class="class">.input</span><span class="rules">{  
+    <span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;  
+    <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;  
+    <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">10px</span> <span class="number">50px</span></span></span>;  
+    <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">20px</span></span></span>;  
+    <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100px</span></span></span>;  
+}</span>  
+
+<span class="class">.search_button</span><span class="rules">{  
+    <span class="rule"><span class="attribute">display</span>:<span class="value">block</span></span>;  
+    <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;  
+    <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">60px</span></span></span>;  
+    <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">30px</span></span></span>;  
+    <span class="rule"><span class="attribute">margin-top</span>:<span class="value"> <span class="number">10px</span>  
+}  
+
+.user{  
+    display: block</span></span>;  
+    <span class="rule"><span class="attribute">float</span>:<span class="value"> right</span></span>;  
+    <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">30px</span></span></span>;  
+}</span>  
+
+<span class="class">.left_pannel</span><span class="rules">{  
+    <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#D8D8D8</span></span></span>;  
+    <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">200px</span></span></span>;  
+    <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">600px</span></span></span>;  
+    <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;  
+}</span>  
+
+<span class="class">.compose</span><span class="rules">{  
+    <span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;  
+    <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;  
+    <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">80px</span></span></span>;  
+    <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">10px</span> auto</span></span>;  
+}</span>  
+
+<span class="class">.left_pannel</span> <span class="class">.ul</span><span class="rules">{  
+    <span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;  
+    <span class="rule"><span class="attribute">list-style</span>:<span class="value"> none</span></span>;  
+    <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">60px</span></span></span>;  
+    <span class="rule"><span class="attribute">margin</span>:<span class="value"><span class="number">0px</span></span></span>;  
+    <span class="rule"><span class="attribute">padding</span>:<span class="value"><span class="number">15px</span></span></span>;  
+}</span>  
+
+<span class="class">.hr</span><span class="rules">{  
+    <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">200px</span></span></span>;  
+    <span class="rule"><span class="attribute">size</span>:<span class="value"><span class="number">1px</span></span></span>;  
+    <span class="rule"><span class="attribute">color</span>:<span class="value"><span class="hexcolor">#848484</span></span></span>;  
+}</span>  
+
+<span class="class">.right_pannel</span><span class="rules">{  
+    <span class="rule"><span class="attribute">float</span>:<span class="value">left</span></span>;  
+    <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;  
+    <span class="rule"><span class="attribute">margin-left</span>:<span class="value"> <span class="number">200px</span></span></span>;  
+    <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">600px</span></span></span>;  
+}</span>  
+
+<span class="tag">dd</span><span class="class">.time</span><span class="rules">{  
+    <span class="rule"><span class="attribute">float</span>:<span class="value"> right</span></span>;  
+    <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100px</span></span></span>;  
+    <span class="rule"><span class="attribute">border-bottom</span>:<span class="value"> <span class="number">1px</span> solid <span class="hexcolor">#D8D8D8</span></span></span>;  
+}</span>  
+
+<span class="tag">dt</span><span class="rules">{  
+    <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;  
+    <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">80px</span></span></span>;  
+    <span class="rule"><span class="attribute">border-bottom</span>:<span class="value"> <span class="number">1px</span> solid <span class="hexcolor">#D8D8D8</span></span></span>;  
+    <span class="rule"><span class="attribute">padding-left</span>:<span class="value"> <span class="number">5px</span></span></span>;  
+}</span>  
+
+<span class="tag">dd</span><span class="class">.subject</span><span class="rules">{  
+    <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">300px</span></span></span>;  
+    <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;  
+    <span class="rule"><span class="attribute">border-bottom</span>:<span class="value"> <span class="number">1px</span> solid <span class="hexcolor">#D8D8D8</span></span></span>;  
+}</span>  
+
+<span class="class">.new_message</span><span class="rules">{  
+    <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;  
+    <span class="rule"><span class="attribute">right</span>:<span class="value"> <span class="number">10px</span></span></span>;  
+    <span class="rule"><span class="attribute">bottom</span>:<span class="value"> <span class="number">10px</span></span></span>;  
+    <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">1px</span> solid black</span></span>;  
+    <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">300px</span></span></span>;  
+    <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">300px</span></span></span>;  
+    <span class="rule"><span class="attribute">background-color</span>:<span class="value"> white  
+}  
+
+.new_message ul {  
+    list-style: none</span></span>;  
+    <span class="rule"><span class="attribute">margin</span>:<span class="value"><span class="number">0px</span></span></span>;  
+    <span class="rule"><span class="attribute">padding</span>:<span class="value"><span class="number">0px</span></span></span>;  
+}</span>  
+
+<span class="class">.new_message</span> <span class="tag">li</span> <span class="rules">{  
+    <span class="rule"><span class="attribute">text-align</span>:<span class="value"> left</span></span>;  
+    <span class="rule"><span class="attribute">margin</span>:<span class="value"><span class="number">0px</span></span></span>;  
+    <span class="rule"><span class="attribute">padding</span>:<span class="value"><span class="number">10px</span></span></span>;  
+}</span>  
+
+<span class="class">.new_message</span> <span class="tag">ul</span> <span class="tag">li</span><span class="class">.title</span><span class="rules">{  
+    <span class="rule"><span class="attribute">background-color</span>:<span class="value"> black</span></span>;  
+    <span class="rule"><span class="attribute">color</span>:<span class="value"> white</span></span>;  
+    <span class="rule"><span class="attribute">border-bottom</span>:<span class="value"> <span class="number">1px</span> solid <span class="hexcolor">#848484</span></span></span>;  
+}</span>  
+
+<span class="class">.new_message</span> <span class="tag">ul</span> <span class="tag">li</span><span class="class">.recipients</span><span class="rules">{  
+    <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#848484</span></span></span>;  
+    <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">1px</span> solid <span class="hexcolor">#848484</span></span></span>;  
+    <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">10px</span></span></span>; 
+}</span>  
+
+<span class="class">.new_message</span> <span class="tag">ul</span> <span class="tag">li</span><span class="class">.subject</span><span class="rules">{  
+    <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#848484</span></span></span>;  
+    <span class="rule"><span class="attribute">border-bottom</span>:<span class="value"> <span class="number">1px</span> solid grey</span></span>;  
+    <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">10px</span>  
+}  
+
+.new_message ul li.body{  
+    color: <span class="hexcolor">#848484</span></span></span>;  
+    <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">120px</span>  
+}  
+
+.new_message ul li.submit{  
+    background-color: <span class="hexcolor">#D8D8D8</span></span></span>;  
+}</span>  
+</code></pre><h3 id="五、心得">五、心得</h3><ol>
+<li>任务驱动，比如，模拟Gmail</li>
+<li>针对同一个作业持续完善 </li>
+<li>网站关于前端开发很多资料，要针对开发过程中遇到的问题一点一点google解决</li>
+<li>将html/css各种属性和具体场景关联记忆</li>
+</ol>
+
+      
+    </div>
+  
+    <footer class="article-footer">
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/">HTML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Study/">Study</a></li></ul>
+
+    </footer>
+  
+  </div>
+  
+</article>
+
+
+    
+      <article id="post-QA_and_BA" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/03/14/QA_and_BA/">QA and BA</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2013/03/14/QA_and_BA/" class="article-date">
+  <time datetime="2013-03-13T16:00:00.000Z" itemprop="datePublished">2013-03-14</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Work/">Work</a>
+  </div>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>去年7月初开始和某银行保险项目的合作，到我明天下项目，都9个月了。其中，经历了2个项目，其中一个项目由于客户那边的人力资源缺乏问题仅仅维持了3个月；另一个呢，则从开始到现在都6个月了，预计今年6月上线，也就是总周期预计9个月。</p>
+<p>和之前不同，这次我在项目中挑战了BA/QA双重身份，简单小结下我理解的两者的工作内容：</p>
+<p><code>（仅代表我个人项目的经历，不一定和敏捷中QA或者BA标准高度匹配，特此申明下）</code></p>
+<h3 id="QA(Quality_Analyst）">QA(Quality Analyst）</h3><h4 id="开发前：">开发前：</h4><p>以Story为载体，通过和BA讨论，获得对需求的全面了解，并在开发人员开发之前，确定测试用例集；或者，根据项目需要，和开发人员结对进行功能性自动化测试。</p>
+<h4 id="开发中：">开发中：</h4><p>随时和开发人员和BA沟通，确保测试用例都实现，针对一些大家都不确定的需求，会找客户产品经理确认。 </p>
+<h4 id="开发完成：">开发完成：</h4><p>开始各种测试，侧重探索性测试，因为之前所生成的测试用例，团队默认在开发中这些已经被开发人员实现了，所以开发之后的测试更要侧重一些之前没有写下来的测试场景，侧重回归性测试等</p>
+<h3 id="BA(Business_Analyst)">BA(Business Analyst)</h3><h4 id="需求分析前：">需求分析前：</h4><p>尽量熟悉产品，分析产品用户群的操作习惯，分析产品的商业价值以及产品经理对产品的定位。</p>
+<p>这些都作为在后续活动中的指导方针，比如，这个项目是个针对保险索赔用户的个人信息管理网站，那质量和用户友好性将是最重要的，在后续的开发和测试中，任何关乎用户体验和页面质量的问题我们都需要注意。</p>
+<h4 id="需求分析中：">需求分析中：</h4><p>将大块需求，拆分成大小合适，相互依赖较小，可测可估的story, 并且针对这些story,和客户的产品经理深度沟通讨论，把全部信息记录在story上，也就是AC(验收标准)，这个是作为后续各种开发和测试活动的沟通载体存在的。</p>
+<h4 id="需求分析后：">需求分析后：</h4><p>story有着清晰详细的验收标准，并且测试人员，开发人员都对需求有个一致的理解，这才是分析任务结束的标准。这之后呢，需求分析人员就要随时根据测试或者开发中出现的预期之外的问题做出响应，比如，测试人员测试发现了一个Bug, 分析人员就要根据产品的定位做出相应的响应，比如这个是不是对产品产生致命影响的，是不是可以暂时降低优先级的，等等，如果还是无法确定，就需要和客户产品经理直接沟通了。</p>
+
+      
+    </div>
+  
+    <footer class="article-footer">
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BA/">BA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/QA/">QA</a></li></ul>
+
+    </footer>
+  
+  </div>
+  
+</article>
+
+
+    
+      <article id="post-3_Years_3_Days" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/03/13/3_Years_3_Days/">3年？3天？</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2013/03/13/3_Years_3_Days/" class="article-date">
+  <time datetime="2013-03-12T16:00:00.000Z" itemprop="datePublished">2013-03-13</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Life/">Life</a>
+  </div>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这周是在成都出差的最后一周，项目上的事情大部分都交接完了，突然闲了下来，很是不习惯，但是，好好珍惜这3天，过几天我就要离开呆了大半年的成都了，开始在北京的新的项目了，新的一轮忙碌即将开始。</p>
+<p>回顾下开始工作以来的这三年，像过电影似的，这3年的经历比我前二十多年的经历要丰富的多：）</p>
+<ul>
+<li><p>2010年2月开始实习生身份进入公司，开始怯生生的职场生活，那会办公室初建，小小的办公室，热火朝天的心态，大家一起努力着，动不动一个办公室的人出去聚餐，也不过十几个人。</p>
+</li>
+<li><p>半年之后，研究生毕业了，也正式入职了，第一次坐飞机，第一次出国，第一次去成都，第一次和那么多老外一起学习生活，第一次攀岩，第一次露营，太多第一次了，那段培训生活充实，也教会了很多我从课堂和书本学不到的东西。</p>
+</li>
+<li><p>接着，因缘际会，我到了悉尼，半年的客户现场工作，让我压力倍增，痘痘狂冒，体重飙升。但是，回过来了，记住的永远是甜蜜开心的日子，友好的客户，善良的同事，黄金海岸墨尔本的旅行趣事，接家人一起出国旅行的成就感，三五好友的深山烤肉，有澳洲那蓝天白云青山绿海，都让我心驰神往。</p>
+</li>
+<li><p>从悉尼出来，在西安呆了整整一年，那一年发生了不少不愉快的事情，行李丢失，房屋漏水赔偿等等，我也剪短了我的发，只为重新开始。但是，这一年的工作确实是令人开心的，工作氛围轻松，同事集体拍写真，关系好的都是腻在一起吃饭学习k歌，日子就可以溜达到了2012年4月。</p>
+</li>
+<li><p>我遇到了能够和陪伴我一生的人，从此阳光又温暖起来，风儿也轻柔起来，在那个美好的春天。</p>
+</li>
+<li><p>接着，订婚，装修，件件事情接踵而至。 而我也来到了成都出差，这确实是一个美好的城市，美食，周边好玩的地方，以及和煦的空气。这半年不停地行走在路上，西藏，厦门，新疆，平遥，北京，西安，丽江，旅行让我时不时停下来回头看看自己的生活，让我珍惜眼前，心胸更加广阔。</p>
+</li>
+<li><p>马上，就要去北京工作了，留恋成都，想念西安，但是，人生不就是有失有得嘛，尝试下在雾霾帝都生活下也没啥不好，可以让我更加清楚自己的方向嘛（自我安慰下：-/）。</p>
+</li>
+</ul>
+<p>13年步入了我职场生涯的第三年，也即将进入我人生的新阶段，希望这一年有所希冀，有所突破 both work and life:)</p>
+
+      
+    </div>
+  
+    <footer class="article-footer">
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Life/">Life</a></li></ul>
+
+    </footer>
+  
+  </div>
+  
+</article>
+
+
+    
       <article id="post-BQA" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -342,7 +830,7 @@
 </a>
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/Test/">Test</a>
+    <a class="article-category-link" href="/categories/Work/">Work</a>
   </div>
 
       
@@ -404,6 +892,138 @@ I mainly find<span class="instruction"> if </span>any spelling errors around all
 </article>
 
 
+    
+      <article id="post-OZ_Thoughts" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2011/04/01/OZ_Thoughts/">Some thoughts about my job during recent months</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2011/04/01/OZ_Thoughts/" class="article-date">
+  <time datetime="2011-03-31T16:00:00.000Z" itemprop="datePublished">2011-04-01</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Work/">Work</a>
+  </div>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Today is my 4th month in OZ, and everything seems work well now. And the recent 2 months I was so busy with my job. And I felt better. </p>
+<p>However, during the phase of fitting into the pretty new working env, I endured a lot, and it can be tell from my previous posts. Here I want to share some experiences with the people who is experiencing or will experience the similar situation. The advices are really simple and obvious, however, it is also really helpful.</p>
+<h3 id="1-_Get_help_from_others">1. Get help from others</h3><p><strong>Pair with more experienced co-workers, and also ask for help from others who already has experienced the same things as you.</strong></p>
+<p>When paring, try to find what’s the difference between your behavior and others, analyse the distances, and try to be better in the next time. e.g. In the project I am on now, I work with someone has more working experience, and I learn a lot. I will compare our behaviors towards the same issue, and then I found the distance, I began to ask myself, why I did this way rather than that way, which is better? After analysis, you surely can do better next time.</p>
+<p>Another example is I find some people had similar experience with me, and I asked for help from them for the experience-sharing. And I find that people always like to be helpful to others. So, ask them, it is not a shame.</p>
+<h3 id="2-_Ask_for_feedback_on_your_own_initiative">2. Ask for feedback on your own initiative</h3><p><strong>That is to say, sometimes, you feel stressful, it may not because you are not doing well, it may due to the distance between your expect ion towards yourself and others.Maybe you are expecting too high or too much.</strong></p>
+<p>Stress sometimes acts as a motivation. But I like to work happily. I need the encouragement and suggestion from others. Thus, for the people in the similar situation, if the uncertain and in-confidence you have will make you stressful and not happy, try not to be shy or lazy. Just have some conversations with co-workers, either by free talk or email. People always be afraid of the unknown things. And then, you may have much more context about the situation where you are. you will be encouraged by the feedback about what you do well, and also you can have directions about the future improvement towards the feedback what you did less well. Make the unknown to known. Sometimes, it will go out of your imagination.</p>
+<h3 id="3-_And_most_important,_find_some_people_you_can_complain_to">3. And most important, find some people you can complain to</h3><p>Of course, you will have some complaint from the start. So you should complain, either to your family members or your close friends, but try to find somebody who can bear you. Of course you can find other ways to release the stress.</p>
+<h3 id="4-_Always_to_be_nice">4. Always to be nice</h3><p>From my point of view, disregards the ability, I like to work with the kind people. Especially act as my role, I always have to have conversations with different people, Devs, BAs, UXs and so on. However, always to be nice is not equal to give up your baseline.You should speak up if something goes wrong, you can do this in a acceptable tone or method.</p>
+<h3 id="5-_Do_your_job_well_try_your_best">5. Do your job well try your best</h3><p>This is what you can control. so try to do best. Be positive and be hard-working. You need have correct  attitude towards your job.</p>
+<p><strong>The above is what I can summarized as the good aspects, and also I know what I did not so well, I will continue to improve on that, hope I can share some later.</strong></p>
+
+      
+    </div>
+  
+    <footer class="article-footer">
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Australia/">Australia</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ThoughtWorks/">ThoughtWorks</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Thoughts/">Thoughts</a></li></ul>
+
+    </footer>
+  
+  </div>
+  
+</article>
+
+
+    
+      <article id="post-Reading_Notes2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2011/02/23/Reading_Notes2/">读书笔记2－－克服拖延的一些tips</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2011/02/23/Reading_Notes2/" class="article-date">
+  <time datetime="2011-02-22T16:00:00.000Z" itemprop="datePublished">2011-02-23</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Life/">Life</a>
+  </div>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>不同的人，拖延的诱因不同，比如，有的是害怕失败，有的是害怕成功，还有的是害怕被掌控的感觉，等等。每个发现有拖延毛病的人都可以在书里找到症状，然后感同身受。</p>
+<p>最近读书比较慢，但是一直在继续，当我确定了自己的“症状”后，便开始寻求方法来“治疗”，所以先略过了书中一些内容，找到了一些简单的小贴士来慢慢“缓解”症状，以下tips是结合自己理解的读书笔记：</p>
+<ol>
+<li><p>确定一个切实可行，明确的，小并能达到的目标，而不是一个模棱两可，泛泛的，不切实际的目标。</p>
+<p> 比如，就拖延这个问题，你与其说，我从今以后再也不拖延了，还不如说，从现在起，我每天要花一个小时来读《拖延心理学》，并做必要的笔记。 另外，针对那些比较庞大的目标，比如减肥，你与其说，我一个星期要减5斤，还不如说，我每天要吃8成饱，并且一周至少跑步3次，先坚持一星期什么什么的。</p>
+</li>
+<li><p>在时间分配上要从实际考虑，不要太理想化。</p>
+<p> 问问自己，要完成这件事需要多久，你目前有多少空闲时间？具体说来，就是不要想当然，与其觉得自己总有很多时间来做这件事，还不如，具体翻开日程表，确定自己哪段时间确实有空，并能做这件事。</p>
+</li>
+<li><p>立即开始做</p>
+<p> 俗话说：千里之行，始于足下。对于一件你要完成的任务，要尽快开始。</p>
+</li>
+<li><p>使用那15分钟 </p>
+<p> 比如，你想读书，你一般12点睡觉，所以如果某天到了11：45，你躺在床上，与其说， 就剩15分钟了，能干什么呢，不如停止犹豫，就利用这15分钟，能看多少就看多少呗！</p>
+</li>
+<li><p>要对挫折失败早有预期，这样才不会太有挫败感</p>
+</li>
+<li><p>吝惜你的时间</p>
+<p> 要懂得说“NO”, 不要什么都要抓，要抓一些对自己来说最重要的事。</p>
+</li>
+<li><p>不要总找借口，把借口当作拖延的理由。</p>
+<p> 比如，与其说，我太累了，以后再做吧。 不如说，我是很累，那就只花15分钟看会书，看完就睡。</p>
+</li>
+<li><p>一直要鼓励自己，注重付出的努力，不要太看中结果。</p>
+<p> 不要陷入0或者100的思维模式，要记得，任何一小步都是进步。所以，与其说，除非我一周减掉5斤我才会觉得成功。不如这样想，恩，我已经开始跑步了，并且我在努力，我很开心，今天可以奖励自己看电影</p>
+</li>
+<li><p>要单纯地把拖延看成一个信号，而不是意味自己彻底的失败</p>
+<p> 不要总是觉得，我又在拖延了，我讨厌自己。还不如这样想，我又拖延了，为什么呢，是不是我的目标还是太大，我是不是要调整下呢？</p>
+</li>
+</ol>
+<p><strong>总之，要记住：继续拖延，还是立即行动呢，这就在一念之差。</strong></p>
+
+      
+    </div>
+  
+    <footer class="article-footer">
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Notes/">Notes</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Procrastination/">Procrastination</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Reading/">Reading</a></li></ul>
+
+    </footer>
+  
+  </div>
+  
+</article>
+
+
+    
+      <nav id="page-nav">
+        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一页 &raquo;</a>
+      </nav>
     </section>
     <footer id="footer">
   

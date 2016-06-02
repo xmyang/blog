@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>html/css学习笔记（二） - Testing Blogs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="接上篇html/css 学习笔记（一），这段时间项目和个人事情明显加多，进度变慢了，但是得提醒自己不能懒惰，继续总结。。。
+这段时间其实还在折腾Gmail template, 从页面来看，变化不大，最多的是是明白html代码架构，更熟练地应用各个属性等。有点痛苦的感觉，也逐渐明白什么叫做扣html。
+以下仅仅是我学习到的几个知识点，具体内容和原理都没有详细表述。因为其实这些知识点google得到的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="html/css学习笔记（二）">
+<meta property="og:url" content="http://xmyang.github.io/2013/05/06/HTML_CSS_Study2/index.html">
+<meta property="og:site_name" content="Testing Blogs">
+<meta property="og:description" content="接上篇html/css 学习笔记（一），这段时间项目和个人事情明显加多，进度变慢了，但是得提醒自己不能懒惰，继续总结。。。
+这段时间其实还在折腾Gmail template, 从页面来看，变化不大，最多的是是明白html代码架构，更熟练地应用各个属性等。有点痛苦的感觉，也逐渐明白什么叫做扣html。
+以下仅仅是我学习到的几个知识点，具体内容和原理都没有详细表述。因为其实这些知识点google得到的">
+<meta property="og:image" content="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/Homework_Gmail.png">
+<meta property="og:updated_time" content="2016-06-02T14:59:05.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="html/css学习笔记（二）">
+<meta name="twitter:description" content="接上篇html/css 学习笔记（一），这段时间项目和个人事情明显加多，进度变慢了，但是得提醒自己不能懒惰，继续总结。。。
+这段时间其实还在折腾Gmail template, 从页面来看，变化不大，最多的是是明白html代码架构，更熟练地应用各个属性等。有点痛苦的感觉，也逐渐明白什么叫做扣html。
+以下仅仅是我学习到的几个知识点，具体内容和原理都没有详细表述。因为其实这些知识点google得到的">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+  <link href="/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+
+</head>
+<body>
+  <div id="container">
+    <header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <a id="main-nav-toggle" class="nav-icon"></a>
+      <a id="logo" class="logo" href="/"></a>
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/categories">Categories</a>
+        
+          <a class="main-nav-link" href="/tags">Tags</a>
+        
+          <a class="main-nav-link" href="/AboutMe.html">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://xmyang.github.io"></form>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+    <section id="main" class="outer"><article id="post-HTML_CSS_Study2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      html/css学习笔记（二）
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2013/05/06/HTML_CSS_Study2/" class="article-date">
+  <time datetime="2013-05-05T16:00:00.000Z" itemprop="datePublished">2013-05-06</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Work/">Work</a>
+  </div>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>接上篇html/css 学习笔记（一），这段时间项目和个人事情明显加多，进度变慢了，但是得提醒自己不能懒惰，继续总结。。。</p>
+<p>这段时间其实还在折腾Gmail template, 从页面来看，变化不大，最多的是是明白html代码架构，更熟练地应用各个属性等。有点痛苦的感觉，也逐渐明白什么叫做扣html。</p>
+<p>以下仅仅是我学习到的几个知识点，具体内容和原理都没有详细表述。因为其实这些知识点google得到的结果更准确些：）</p>
+<h3 id="1-_Gmail_template继续重构，达到以下几个目标">1. Gmail template继续重构，达到以下几个目标</h3><h4 id="1）css_module">1）css module</h4><p>推荐阅读  <a href="http://smacss.com/book/type-module" target="_blank" rel="external">http://smacss.com/book/type-module</a> </p>
+<pre><code><span class="tag">new_message</span> <span class="tag">li</span> <span class="rules">{
+<span class="rule"><span class="attribute">text-align</span>:<span class="value"> left</span></span>;
+<span class="rule"><span class="attribute">margin</span>:<span class="value"><span class="number">0px</span></span></span>;
+<span class="rule"><span class="attribute">padding</span>:<span class="value"><span class="number">10px</span></span></span>;
+}</span>
+<span class="class">.new_message</span> <span class="tag">li</span><span class="class">.title</span><span class="rules">{
+<span class="rule"><span class="attribute">background-color</span>:<span class="value"> black</span></span>;
+<span class="rule"><span class="attribute">color</span>:<span class="value"> white</span></span>;
+}</span>
+<span class="class">.new_message</span> <span class="tag">li</span><span class="class">.recipients</span><span class="rules">{
+<span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#848484</span></span></span>;
+<span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">1px</span> solid <span class="hexcolor">#848484</span></span></span>;
+<span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">10px</span></span></span>;
+}</span>
+</code></pre><h4 id="2）加入Common-css/_Reset-css">2）加入Common.css/ Reset.css</h4><p>跨浏览器神马的最讨厌了，有木有？那就用reset吧</p>
+<p>关心reset历史或者八卦的可以移步 <a href="http://ued.taobao.com/blog/2009/03/reset_css_a/" target="_blank" rel="external">http://ued.taobao.com/blog/2009/03/reset_css_a/</a><br>目前比较全的CSS重设(reset)方法总结 <a href="http://blog.bingo929.com/css-reset-collection.html" target="_blank" rel="external">http://blog.bingo929.com/css-reset-collection.html</a></p>
+<p>一段相同的css出现了n多次，代码很冗余，有木有？ 那就把公用的部分抽出来放到common.css里吧</p>
+<h3 id="2-_CSS_Image_Sprites">2. CSS Image Sprites</h3><p>页面的每个图片都是一个http request,所以如何提高页面加载速度，我们需要把页面中的图片进行组合以较少请求，详情请参考阅读 <a href="http://css-tricks.com/css-sprites/" target="_blank" rel="external">http://css-tricks.com/css-sprites/</a> </p>
+<h3 id="3-_UI选颜色">3. UI选颜色</h3><p>如果你也遇到了每次想设置背景颜色，但是不知道具体值，只能写”white/black”的话，请参考阅读 <a href="http://html-color-codes.info/chinese/" target="_blank" rel="external">http://html-color-codes.info/chinese/</a> </p>
+<h3 id="另外，在做项目的时候，总结了2个知识点，分享给大家：">另外，在做项目的时候，总结了2个知识点，分享给大家：</h3><h4 id="1-clear:both的妙用">1.clear:both的妙用</h4><p>如在DIV + CSS设计网页中，经常需要设置多个DIV并列排列，这个时候就需要使用float来实现，但问题出现了，当前面并列的多个 DIV总宽度不足100%，下面的的DIV就很可能向上提，和上一行的并列的DIV在同一行，这不是我们想要的结果。使用Clear属性正好可以解决这一问题。</p>
+<h4 id="2-_@font-face">2. @font-face</h4><p><a href="http://www.smashingmagazine.com/2011/03/02/the-font-face-rule-revisited-and-useful-tricks/" target="_blank" rel="external">http://www.smashingmagazine.com/2011/03/02/the-font-face-rule-revisited-and-useful-tricks/</a></p>
+<h4 id="3-_width,_height如果可以少用就少用，_float:_left也要少用，涉及到调浏览器时候的痛苦。">3. width, height如果可以少用就少用， float: left也要少用，涉及到调浏览器时候的痛苦。</h4><h4 id="4-_如何让链接a_没有下划线，text-decroation">4. 如何让链接a 没有下划线，text-decroation</h4><h4 id="5-_能去掉不必要的div就尽量去掉——让代码更加清爽">5. 能去掉不必要的div就尽量去掉——让代码更加清爽</h4><h4 id="6-_Background—-设置Button/page_background">6. Background—-设置Button/page background</h4><p><img src="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/Homework_Gmail.png" alt="Homework: Gmail"></p>
+
+      
+    </div>
+  
+    <footer class="article-footer">
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/">HTML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Study/">Study</a></li></ul>
+
+    </footer>
+  
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/06/23/Bug_Bash/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-title"><span>&lt;</span>&nbsp;
+        
+          Bug Bash
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2013/04/11/HTML_CSS_Study1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">html/css学习笔记（一）&nbsp;<span>&gt;</span></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Yang Xuemin&nbsp;
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, theme by <a href="http://github.com/ppoffice">PPOffice</a>
+    </div>
+  </div>
+</footer>
+    
+
+<script src="/js/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>

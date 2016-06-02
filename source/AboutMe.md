@@ -7,7 +7,7 @@ I am **YangXuemin (Michelle)**, a Quality Analyst from China, who worked in soft
 
 #### I have written following articles on Github:
 
-[**Bug Bash in Chinese**](http://xmyang.github.io/BugBash/BugBash.html)
+[*Bug Bash in Chinese*](http://xmyang.github.io/BugBash/BugBash.html)
 
 #### There is one video of my speaking in B’QConf (Better Quality Conference):
 
