@@ -10,9 +10,9 @@ comments: true
 ---
 
 之前也学过几天html/css，但是这2个星期里自我感觉进步最快，简单总结下。。。
- 
-###一、循序渐进之html/css
- 
+
+### 一、循序渐进之html/css
+
 - ul/li ol/li dl/dt/dd
 - block inline元素
 - box model---padding margin
@@ -21,22 +21,23 @@ comments: true
 - position
 - media queries
 
-###二、必杀技
+### 二、必杀技
 
 - clearfix 比如当父元素no float, 子元素float, 并且高度大于父元素时，这样父元素无法被撑开，可用该必杀技
 - position: relative 比如想解决radiobutton 图标和字不在一行的问题
 - margin: 0 auto  比如解决横向居中的问题
 - visibility:hidden 和 display:none的使用场景  
 
-###三、推荐一个无敌网站
+### 三、推荐一个无敌网站
 http://learnlayout.com/ 超级适合学前端开发的新手
- 
-###四、我的作业：
+
+### 四、我的作业：
 
 ![Gmail](https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/Homework.png)
 
 gmail.html Html代码
-	
+
+  ```
 	<!Doctype html>  
 	<html>  
     <head>  
@@ -126,18 +127,18 @@ gmail.html Html代码
                         <input type="button" value="Send">  
                     </li>  
                 </ul>  
-  
+
             </div>  
         <div>   
     </body>  
 	</html>  
- 
- 
- 
+  ```
+
 gmail.css Java代码
 
+  ```
 	.skin{  
-    /*max-width: 800px; 
+    /*max-width: 800px;
     margin: 0 auto*/  
 	}  
 		.header{  
@@ -145,14 +146,14 @@ gmail.css Java代码
     	border:1px solid grey;  
     	background: #D8D8D8  
 	}  
-  
+
 	.logo{  
     	display: block;  
     	height: 50px;  
     	width: 200px;  
     	float: left;  
 	}  
-  
+
 	.input{  
     	display: block;  
     	float: left;  
@@ -160,7 +161,7 @@ gmail.css Java代码
     	height: 20px;  
     	width: 100px;  
 	}  
-  
+
 	.search_button{  
     	display:block;  
     	float: left;  
@@ -181,7 +182,7 @@ gmail.css Java代码
     	height: 600px;  
     	float: left;  
 	}  
-  
+
 	.compose{  
     	display: block;  
     	float: left;  
@@ -238,7 +239,7 @@ gmail.css Java代码
     	width: 300px;  
     	background-color: white  
 	}  
-  
+
 	.new_message ul {  
     	list-style: none;  
     	margin:0px;  
@@ -260,7 +261,7 @@ gmail.css Java代码
 	.new_message ul li.recipients{  
     	color: #848484;  
     	border: 1px solid #848484;  
-    	height: 10px; 
+    	height: 10px;
 	}  
 
 	.new_message ul li.subject{  
@@ -268,7 +269,7 @@ gmail.css Java代码
     	border-bottom: 1px solid grey;  
     	height: 10px  
 	}  
-  
+
 	.new_message ul li.body{  
     	color: #848484;  
     	height: 120px  
@@ -277,10 +278,11 @@ gmail.css Java代码
 	.new_message ul li.submit{  
     	background-color: #D8D8D8;  
 	}  
- 
-###五、心得
+  ```
+  
+### 五、心得
 
 1. 任务驱动，比如，模拟Gmail
-2. 针对同一个作业持续完善 
+2. 针对同一个作业持续完善
 3. 网站关于前端开发很多资料，要针对开发过程中遇到的问题一点一点google解决
 4. 将html/css各种属性和具体场景关联记忆

@@ -6,32 +6,35 @@
   <title>Bug Bash - Testing Blogs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="什么是Bug Bash？Bug Bash http://en.wikipedia.org/wiki/Bug_bash，也称为Bug大扫除，是软件测试的一个很重要的实践，是对日常测试的有效补充,它在很多互联网公司（比如微软，淘宝等）都是一项重要的测试实践。简单的说，Bug Bash就是对产品找茬；具体来说，就是在产品稳定的阶段，选取一个特定时间段邀请一组不同角色和背景的人员在会议室里对被测产品找Bu">
+<meta name="keywords" content="Practice,Agile,Bug Bash">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Bug Bash">
 <meta property="og:url" content="http://xmyang.github.io/2015/06/23/Bug_Bash/index.html">
 <meta property="og:site_name" content="Testing Blogs">
 <meta property="og:description" content="什么是Bug Bash？Bug Bash http://en.wikipedia.org/wiki/Bug_bash，也称为Bug大扫除，是软件测试的一个很重要的实践，是对日常测试的有效补充,它在很多互联网公司（比如微软，淘宝等）都是一项重要的测试实践。简单的说，Bug Bash就是对产品找茬；具体来说，就是在产品稳定的阶段，选取一个特定时间段邀请一组不同角色和背景的人员在会议室里对被测产品找Bu">
 <meta property="og:image" content="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/BugBash.png">
-<meta property="og:updated_time" content="2016-06-01T15:45:18.000Z">
+<meta property="og:updated_time" content="2017-07-10T02:28:56.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Bug Bash">
 <meta name="twitter:description" content="什么是Bug Bash？Bug Bash http://en.wikipedia.org/wiki/Bug_bash，也称为Bug大扫除，是软件测试的一个很重要的实践，是对日常测试的有效补充,它在很多互联网公司（比如微软，淘宝等）都是一项重要的测试实践。简单的说，Bug Bash就是对产品找茬；具体来说，就是在产品稳定的阶段，选取一个特定时间段邀请一组不同角色和背景的人员在会议室里对被测产品找Bu">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/BugBash.png">
   
   
     <link rel="icon" href="/favicon.png">
   
   <link href="/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
   <link href="/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
   
 
 </head>
+
 <body>
   <div id="container">
     <header id="header">
   <div id="header-outer" class="outer">
     <div id="header-inner" class="inner">
-      <a id="main-nav-toggle" class="nav-icon"></a>
+      <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
       <a id="logo" class="logo" href="/"></a>
       <nav id="main-nav">
         
@@ -48,7 +51,7 @@
       </nav>
       <nav id="sub-nav">
         <div id="search-form-wrap">
-          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://xmyang.github.io"></form>
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://xmyang.github.io"></form>
         </div>
       </nav>
     </div>
@@ -70,7 +73,7 @@
     
     <div class="article-meta">
       <a href="/2015/06/23/Bug_Bash/" class="article-date">
-  <time datetime="2015-06-22T16:00:00.000Z" itemprop="datePublished">2015-06-23</time>
+  <time datetime="2015-06-22T14:00:00.000Z" itemprop="datePublished">2015-06-23</time>
 </a>
       
   <div class="article-category">
@@ -81,29 +84,34 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="什么是Bug_Bash？">什么是Bug Bash？</h3><p><strong>Bug Bash</strong> <a href="http://en.wikipedia.org/wiki/Bug_bash，也称为Bug大扫除，是软件测试的一个很重要的实践，是对日常测试的有效补充,它在很多互联网公司（比如微软，淘宝等）都是一项重要的测试实践。简单的说，Bug" target="_blank" rel="external">http://en.wikipedia.org/wiki/Bug_bash，也称为Bug大扫除，是软件测试的一个很重要的实践，是对日常测试的有效补充,它在很多互联网公司（比如微软，淘宝等）都是一项重要的测试实践。简单的说，Bug</a> Bash就是对产品找茬；具体来说，就是在产品稳定的阶段，选取一个特定时间段邀请一组不同角色和背景的人员在会议室里对被测产品找Bug。一旦发现问题后可以请熟知产品的观察员确定是否是Bug，对发现最多或者最严重Bug的人员给予一些奖励。项目组成员在搜集好所有Bug和潜在Bug的清单之后，全员进行Bug分析，制定出解决的方案并实施。</p>
-<h3 id="为什么在测试中我们会引入Bug_Bash呢？">为什么在测试中我们会引入Bug Bash呢？</h3><p>由于参与Bug Bash的人员有着不同的角色和背景，甚至来自不同的项目和领域，所以每个人都会通过自己的观察，结合自己的经验，给我们的测试工作带来更多的视角，帮助我们发现那些被我们忽视了的问题。因此通过Bug Bash，我们可以：</p>
+        <h3 id="什么是Bug-Bash？"><a href="#什么是Bug-Bash？" class="headerlink" title="什么是Bug Bash？"></a>什么是Bug Bash？</h3><p><strong>Bug Bash</strong> <a href="http://en.wikipedia.org/wiki/Bug_bash，也称为Bug大扫除，是软件测试的一个很重要的实践，是对日常测试的有效补充,它在很多互联网公司（比如微软，淘宝等）都是一项重要的测试实践。简单的说，Bug" target="_blank" rel="external">http://en.wikipedia.org/wiki/Bug_bash，也称为Bug大扫除，是软件测试的一个很重要的实践，是对日常测试的有效补充,它在很多互联网公司（比如微软，淘宝等）都是一项重要的测试实践。简单的说，Bug</a> Bash就是对产品找茬；具体来说，就是在产品稳定的阶段，选取一个特定时间段邀请一组不同角色和背景的人员在会议室里对被测产品找Bug。一旦发现问题后可以请熟知产品的观察员确定是否是Bug，对发现最多或者最严重Bug的人员给予一些奖励。项目组成员在搜集好所有Bug和潜在Bug的清单之后，全员进行Bug分析，制定出解决的方案并实施。</p>
+<h3 id="为什么在测试中我们会引入Bug-Bash呢？"><a href="#为什么在测试中我们会引入Bug-Bash呢？" class="headerlink" title="为什么在测试中我们会引入Bug Bash呢？"></a>为什么在测试中我们会引入Bug Bash呢？</h3><p>由于参与Bug Bash的人员有着不同的角色和背景，甚至来自不同的项目和领域，所以每个人都会通过自己的观察，结合自己的经验，给我们的测试工作带来更多的视角，帮助我们发现那些被我们忽视了的问题。因此通过Bug Bash，我们可以：</p>
 <ol>
-<li><strong>发现尽可能多的问题。</strong>对于确定是Bug的问题，项目组成员可以通过分析Bug产生的原因，避免类似的Bug再次出现。而有些发现的问题不一定就是Bug，可能是一些潜在的需求，我们同样可以分析这些来优化我们的产品。</li>
-<li><strong>了解不在预期之内的用户行为。</strong>通过了解这些用户行为，我们能分析出哪些用户旅程User Journey是需要添加进我们的测试场景中，甚至需要加入自动化测试的。</li>
-<li><strong>对于并发的测试，尤其是多用户同时执行不同的场景。</strong>大部分时间我们在测试产品时都是单人在操作，即使我们有性能测试来覆盖这些场景，但是通过Bug Bash，我们可以更好地接近用户真实使用产品的并发场景。</li>
-<li><strong>进行更多的用户测试User Testing。</strong>一般来说我们在开发中会不断地进行用户测试，来验证产品是符合用户习惯，以及开发方向是正确的。鉴于产品可能需要保密，并且使用Bug Bash可以用更小的代价，进行更多的用户测试，所以我们会不时地进行Bug Bash。</li>
+<li><p><strong>发现尽可能多的问题。</strong>对于确定是Bug的问题，项目组成员可以通过分析Bug产生的原因，避免类似的Bug再次出现。而有些发现的问题不一定就是Bug，可能是一些潜在的需求，我们同样可以分析这些来优化我们的产品。</p>
+</li>
+<li><p><strong>了解不在预期之内的用户行为。</strong>通过了解这些用户行为，我们能分析出哪些用户旅程User Journey是需要添加进我们的测试场景中，甚至需要加入自动化测试的。</p>
+</li>
+<li><p><strong>对于并发的测试，尤其是多用户同时执行不同的场景。</strong>大部分时间我们在测试产品时都是单人在操作，即使我们有性能测试来覆盖这些场景，但是通过Bug Bash，我们可以更好地接近用户真实使用产品的并发场景。</p>
+</li>
+<li><p><strong>进行更多的用户测试User Testing。</strong>一般来说我们在开发中会不断地进行用户测试，来验证产品是符合用户习惯，以及开发方向是正确的。鉴于产品可能需要保密，并且使用Bug Bash可以用更小的代价，进行更多的用户测试，所以我们会不时地进行Bug Bash。</p>
+</li>
 </ol>
-<h3 id="Bug_Bash除了给我们带来上述4点主要益处，还可以为我们带来一些附加的价值：">Bug Bash除了给我们带来上述4点主要益处，还可以为我们带来一些附加的价值：</h3><ol>
-<li><strong>帮助QA更深入了解系统。</strong>在测试过程中QA进行测试，会不断加深对于产品的理解；不过由于在Bug Bash中QA需要向其他人员描述产品，并规划不同的测试场景和目标，所以会对自己已有的产品知识进行更深入的梳理，而且通过Bug Bash最后的分析阶段，加深对于产品远景、目标和原则更进一步的理解。不同的QA之间也可以相互进行学习和交流。</li>
-<li><strong>宣传项目。</strong>通过Bug Bash，我们可以邀请不同部门，不同角色，不同背景的人员参与，所以无形中就向更多受众宣传了自己，对于项目获得更多资源，以及通过受众进一步影响更多的人。</li>
-<li><strong>引发更多关于产品的思考。</strong>根据Bug Bash搜集的问题列表，项目组成员会对这些问题进行集中讨论，并详细解释如何处理以及为什么这么处理，让项目组所有成员对于产品都各抒己见，而且通过这些讨论，引发更多的思考。</li>
+<h3 id="Bug-Bash除了给我们带来上述4点主要益处，还可以为我们带来一些附加的价值："><a href="#Bug-Bash除了给我们带来上述4点主要益处，还可以为我们带来一些附加的价值：" class="headerlink" title="Bug Bash除了给我们带来上述4点主要益处，还可以为我们带来一些附加的价值："></a>Bug Bash除了给我们带来上述4点主要益处，还可以为我们带来一些附加的价值：</h3><ol>
+<li><p><strong>帮助QA更深入了解系统。</strong>在测试过程中QA进行测试，会不断加深对于产品的理解；不过由于在Bug Bash中QA需要向其他人员描述产品，并规划不同的测试场景和目标，所以会对自己已有的产品知识进行更深入的梳理，而且通过Bug Bash最后的分析阶段，加深对于产品远景、目标和原则更进一步的理解。不同的QA之间也可以相互进行学习和交流。</p>
+</li>
+<li><p><strong>宣传项目。</strong>通过Bug Bash，我们可以邀请不同部门，不同角色，不同背景的人员参与，所以无形中就向更多受众宣传了自己，对于项目获得更多资源，以及通过受众进一步影响更多的人。</p>
+</li>
+<li><p><strong>引发更多关于产品的思考。</strong>根据Bug Bash搜集的问题列表，项目组成员会对这些问题进行集中讨论，并详细解释如何处理以及为什么这么处理，让项目组所有成员对于产品都各抒己见，而且通过这些讨论，引发更多的思考。</p>
+</li>
 </ol>
-<h3 id="既然有如此多的益处，那我们如何组织Bug_Bash，还有哪些细节需要注意的呢？">既然有如此多的益处，那我们如何组织Bug Bash，还有哪些细节需要注意的呢？</h3><h3 id="1-_活动准备">1. 活动准备</h3><ul>
+<h3 id="既然有如此多的益处，那我们如何组织Bug-Bash，还有哪些细节需要注意的呢？"><a href="#既然有如此多的益处，那我们如何组织Bug-Bash，还有哪些细节需要注意的呢？" class="headerlink" title="既然有如此多的益处，那我们如何组织Bug Bash，还有哪些细节需要注意的呢？"></a>既然有如此多的益处，那我们如何组织Bug Bash，还有哪些细节需要注意的呢？</h3><h3 id="1-活动准备"><a href="#1-活动准备" class="headerlink" title="1. 活动准备"></a>1. 活动准备</h3><ul>
 <li><p>首先确保被测产品功能基本稳定。如果被测产品还处于不断出现Bug的开发早期或者中期，就不适合进行Bug Bash。因为如果进行Bug Bash，发现的大部分问题都是已知问题，并不能带来很大的价值。所以我们最好确保被测产品功能基本稳定，并且进行过性能测试和并发性的测试（至少可以支持并发操作）。</p>
 </li>
 <li><p>其次准备对应的测试设备。例如对于Web和桌面产品进行Bug Bash，我们需要准备足够的显示器和键盘，甚至椅子，来保证Bug Bash可以顺利进行；自然，对于测试移动App，我们也需要准备不同型号和操作系统的移动设备。</p>
 </li>
 <li><p>除此之外，我们需要准备产品的特性列表并且准备Bug Bash中参与人员需要完成的任务列表。这份任务列表一般会基于不同浏览器，不同平台，不同语言，不同功能模块，设计出针对每组参与人员需要完成的不同任务列表（具体实例见图1）。对于参与人员的分组，具体根据参与人数和特性列表来确定，可以一个人一个组，两个人结对，或者两个测试人员和组内一个QA结对（这么做是因为这样可以及时确定发现的Bug是否有效）。当然如果组内QA有限，可以让QA充当全场的观察员动态协调。<br><img src="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/BugBash.png" alt="图1 － 根据产品的特性列表制定的Bug Bash任务列表"></p>
-</li>
-</ul>
 <p>图1 － 根据产品的特性列表制定的Bug Bash任务列表</p>
-<ul>
+</li>
 <li><p>同时，我们还需要准备好测试环境和测试账号（如果涉及角色权限等功能的任务），并把这些测试环境信息通过邮件告知参与人员，或者张贴在Bug Bash活动场地附近，以便Bug Bash中所有人可以随时获取这些信息。</p>
 </li>
 <li><p>我们还需要设计一个Bug报告模版并告知参与人员。这么做的目的在于方便参与人员及时记录发现的Bug，也便于我们在Bug Bash后重现和分析bug。因此Bug报告模版格式尽量简单清晰，最好能有截图来帮助说明Bug。Bug报告可以是电子的也可以是纸质的，需要注意的是，尽量保证Bug Bash的参与人员可以方便地访问模版，从而进行Bug记录。</p>
@@ -119,7 +127,7 @@
 <li><p>最后，在Bug Bash开始之前我们准备一些小奖励（比如酸奶，巧克力和小礼品），等Bug Bash后发放给每位参与者，以感谢他们对于活动的支持。</p>
 </li>
 </ul>
-<h3 id="2-_活动中">2. 活动中</h3><ul>
+<h3 id="2-活动中"><a href="#2-活动中" class="headerlink" title="2. 活动中"></a>2. 活动中</h3><ul>
 <li><p>在Bug Bash正式开始前，我们首先要欢迎并感谢所有参与人员，说明本次测试目的、时间、流程、规范和奖励规则等，使所有人都明确Bug Bash会如何进行，以及他们在活动中需要如何测试和记录Bug。随后，我们向每个测试组分发需要测试的任务列表、测试环境和账号，以及纸质或者电子的Bug报告模版。</p>
 </li>
 <li><p>当正式开始Bug Bash后，每个测试组中的两位参与人员需要共用一个显示器和键盘（或者移动设备）进行结对测试。对于确定的Bug，测试组需要记录其重现步骤，并且记录在Bug报告上。如果条件允许，还需要让测试组在测试报告中添加对应的截图。对于不确定的问题，作为观察员的QA可以适时参与确认，减少测试组在一个Bug上花费的时间。</p>
@@ -129,7 +137,7 @@
 <li><p>最后，作为观察员的QA可以记录测试组完成特定任务所用的时间，以便在Bug Bash后对用户测试进行分析时，了解对应功能的可用性和易用性。</p>
 </li>
 </ul>
-<h3 id="3-_活动总结">3. 活动总结</h3><ul>
+<h3 id="3-活动总结"><a href="#3-活动总结" class="headerlink" title="3. 活动总结"></a>3. 活动总结</h3><ul>
 <li><p>准时结束Bug Bash，并对参与者赠送一些小礼物（比如酸奶，巧克力等）来感谢大家参与测试。我们还需要对发现最多Bug或者发现最严重Bug的参与人员给予特殊的物质奖励，例如具有团队Logo的徽章或者T恤等。</p>
 </li>
 <li><p>当然作为组织者，我们还要负责搜集并整理所有发现的Bug。具体来说，首先合并重复的Bug，并且验证它们的重现步骤，尽可能附上对应的截图。最后，组织项目组所有成员就是否需要修复Bug，Bug优先级达成一致意见，这样便于尽早解决高优先级的Bug。</p>
@@ -143,18 +151,19 @@
 <li><p>最后，我们还可以整理Bug Bash中收集到的数据（测试时长，录制的操作视频等），检查是否功能设计不合理，导致用户需要很长时间才能完成操作，从而做出产品改进。</p>
 </li>
 </ul>
-<h3 id="千里之行，始于足下">千里之行，始于足下</h3><p>也许你觉得在项目中实践Bug Bash很耗时间和精力，而且不一定会得到领导的支持。其实我们可以在更小的范围内，例如只是项目组的测试人员中开展Bug Bash，通过成果展示来一点一点地得到各方面的支持。</p>
+<h3 id="千里之行，始于足下"><a href="#千里之行，始于足下" class="headerlink" title="千里之行，始于足下"></a>千里之行，始于足下</h3><p>也许你觉得在项目中实践Bug Bash很耗时间和精力，而且不一定会得到领导的支持。其实我们可以在更小的范围内，例如只是项目组的测试人员中开展Bug Bash，通过成果展示来一点一点地得到各方面的支持。</p>
 <p>虽然以上是笔者在敏捷软件测试中总结的Bug Bash实践，但是Bug Bash的形式并不局限于特定的开发方式，所以我们可以在自己的项目中采用这个实践，来帮助我们促进产品日臻完善。</p>
 
       
     </div>
-  
-    <footer class="article-footer">
-      
+    
+    
+      <footer class="article-footer">
+        
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Agile/">Agile</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Bug-Bash/">Bug Bash</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Practice/">Practice</a></li></ul>
 
-    </footer>
-  
+      </footer>
+    
   </div>
   
     
@@ -178,12 +187,29 @@
   
 </article>
 
+
+
+
+<div class="share_addthis">
+  <div class="sharing addthis_toolbox share">
+    <a class="addthis_button_facebook_like"></a>
+    <a class="addthis_button_tweet"></a>
+    <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-560c64c35486b3d4" async="async"></script>
+</div>
+
+
+
+
+
 </section>
     <footer id="footer">
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2016 Yang Xuemin&nbsp;
+      &copy; 2017 Yang Xuemin&nbsp;
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, theme by <a href="http://github.com/ppoffice">PPOffice</a>
     </div>
   </div>
@@ -193,12 +219,11 @@
 <script src="/js/jquery.min.js"></script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
-  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="/js/script.js" type="text/javascript"></script>
-
+<script src="/js/script.js"></script>
   </div>
 </body>
 </html>

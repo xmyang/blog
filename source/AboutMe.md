@@ -5,9 +5,17 @@ I am **YangXuemin (Michelle)**, a Quality Analyst from China, who worked in soft
 
 ![YangXuemin (Michelle)'s avatar](https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/Avatar.jpg)
 
-#### I have written following articles on Github:
+#### I have published my first paper book about Web Testing:
 
-[*Bug Bash in Chinese*](http://xmyang.github.io/BugBash/BugBash.html)
+[**Bug Big Bang in Web Testing**](https://www.amazon.cn/dp/B071GYCWHP)
+
+  ![Bug Big Bang in Web Testing](https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/WebTestingBookCover.jpg)
+
+#### I have written following articles on Github and also published on ThoughtWorks Insight:
+
+[*Bug Bash on Github*](http://xmyang.github.io/BugBash/BugBash.html)
+[*Bug Bash on ThoughtWorks Insight*](http://insights.thoughtworkers.org/bug-bash/)
+
 
 #### There is one video of my speaking in B’QConf (Better Quality Conference):
 
