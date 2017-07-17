@@ -94,17 +94,16 @@
 <li>Analysis the behavior of the internet users and helps the business make wise decision.</li>
 </ul>
 <h4 id="How-to-test-it"><a href="#How-to-test-it" class="headerlink" title="How to test it?"></a>How to test it?</h4><ol>
-<li>Use GA real time feature to verify the page view and events.</li>
-</ol>
+<li><p>Use GA real time feature to verify the page view and events.</p>
 <p><img src="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/GA.png" alt="GA"></p>
-<ol>
-<li>Download <a href="https://chrome.google.com/webstore/detail/omnibug/bknpehncffejahipecakbfkomebjmokl" target="_blank" rel="external">Omnibug</a> extension for Chrome</li>
-</ol>
+</li>
+<li><p>Download <a href="https://chrome.google.com/webstore/detail/omnibug/bknpehncffejahipecakbfkomebjmokl" target="_blank" rel="external">Omnibug</a> extension for Chrome</p>
 <p><img src="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/Omnibug.png" alt="Omnibug"></p>
-<ol>
-<li>Download <a href="https://chrome.google.com/webstore/detail/google-analytics-debugger/jnkmfdileelhofjcijamephohjechhna" target="_blank" rel="external">Google Analytics Debugger</a> and check the GA tracking in the javascript console in the browser</li>
-</ol>
+</li>
+<li><p>Download <a href="https://chrome.google.com/webstore/detail/google-analytics-debugger/jnkmfdileelhofjcijamephohjechhna" target="_blank" rel="external">Google Analytics Debugger</a> and check the GA tracking in the javascript console in the browser</p>
 <p><img src="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/GADebugger.png" alt="Google Analytics Debugger"></p>
+</li>
+</ol>
 <h3 id="2-krux"><a href="#2-krux" class="headerlink" title="2. krux"></a>2. krux</h3><h4 id="What-is-it-1"><a href="#What-is-it-1" class="headerlink" title="What is it?"></a>What is it?</h4><p>Krux helps the clients to collect the non-PII(  IP host address, pages viewed, browser type, Internet browsing and usage habits, Internet Service Provider, domain name, the time/date of a visit to a website, the referring URL and a computer or device’s operating system information to analysis:</p>
 <ul>
 <li>who are the consumer</li>
@@ -386,7 +385,7 @@
 <p>一段相同的css出现了n多次，代码很冗余，有木有？ 那就把公用的部分抽出来放到common.css里吧</p>
 <h3 id="2-CSS-Image-Sprites"><a href="#2-CSS-Image-Sprites" class="headerlink" title="2. CSS Image Sprites"></a>2. CSS Image Sprites</h3><p>页面的每个图片都是一个http request,所以如何提高页面加载速度，我们需要把页面中的图片进行组合以较少请求，详情请参考阅读 <a href="http://css-tricks.com/css-sprites/" target="_blank" rel="external">http://css-tricks.com/css-sprites/</a></p>
 <h3 id="3-UI选颜色"><a href="#3-UI选颜色" class="headerlink" title="3. UI选颜色"></a>3. UI选颜色</h3><p>如果你也遇到了每次想设置背景颜色，但是不知道具体值，只能写”white/black”的话，请参考阅读 <a href="http://html-color-codes.info/chinese/" target="_blank" rel="external">http://html-color-codes.info/chinese/</a></p>
-<h3 id="另外，在做项目的时候，总结了2个知识点，分享给大家："><a href="#另外，在做项目的时候，总结了2个知识点，分享给大家：" class="headerlink" title="另外，在做项目的时候，总结了2个知识点，分享给大家："></a>另外，在做项目的时候，总结了2个知识点，分享给大家：</h3><h4 id="1-clear-both的妙用"><a href="#1-clear-both的妙用" class="headerlink" title="1.clear:both的妙用"></a>1.clear:both的妙用</h4><p>如在DIV + CSS设计网页中，经常需要设置多个DIV并列排列，这个时候就需要使用float来实现，但问题出现了，当前面并列的多个 DIV总宽度不足100%，下面的的DIV就很可能向上提，和上一行的并列的DIV在同一行，这不是我们想要的结果。使用Clear属性正好可以解决这一问题。</p>
+<h3 id="另外，在做项目的时候，总结了2个知识点，分享给大家："><a href="#另外，在做项目的时候，总结了2个知识点，分享给大家：" class="headerlink" title="另外，在做项目的时候，总结了2个知识点，分享给大家："></a>另外，在做项目的时候，总结了2个知识点，分享给大家：</h3><h4 id="1-clear-both的妙用"><a href="#1-clear-both的妙用" class="headerlink" title="1. clear:both的妙用"></a>1. clear:both的妙用</h4><p>如在DIV + CSS设计网页中，经常需要设置多个DIV并列排列，这个时候就需要使用float来实现，但问题出现了，当前面并列的多个 DIV总宽度不足100%，下面的的DIV就很可能向上提，和上一行的并列的DIV在同一行，这不是我们想要的结果。使用Clear属性正好可以解决这一问题。</p>
 <h4 id="2-font-face"><a href="#2-font-face" class="headerlink" title="2. @font-face"></a>2. @font-face</h4><p><a href="http://www.smashingmagazine.com/2011/03/02/the-font-face-rule-revisited-and-useful-tricks/" target="_blank" rel="external">http://www.smashingmagazine.com/2011/03/02/the-font-face-rule-revisited-and-useful-tricks/</a></p>
 <h4 id="3-width-height如果可以少用就少用，-float-left也要少用，涉及到调浏览器时候的痛苦。"><a href="#3-width-height如果可以少用就少用，-float-left也要少用，涉及到调浏览器时候的痛苦。" class="headerlink" title="3. width, height如果可以少用就少用， float: left也要少用，涉及到调浏览器时候的痛苦。"></a>3. width, height如果可以少用就少用， float: left也要少用，涉及到调浏览器时候的痛苦。</h4><h4 id="4-如何让链接a-没有下划线，text-decroation"><a href="#4-如何让链接a-没有下划线，text-decroation" class="headerlink" title="4. 如何让链接a 没有下划线，text-decroation"></a>4. 如何让链接a 没有下划线，text-decroation</h4><h4 id="5-能去掉不必要的div就尽量去掉—-让代码更加清爽"><a href="#5-能去掉不必要的div就尽量去掉—-让代码更加清爽" class="headerlink" title="5. 能去掉不必要的div就尽量去掉—-让代码更加清爽"></a>5. 能去掉不必要的div就尽量去掉—-让代码更加清爽</h4><h4 id="6-Background—设置Button-page-background"><a href="#6-Background—设置Button-page-background" class="headerlink" title="6. Background—设置Button/page background"></a>6. Background—设置Button/page background</h4><p><img src="https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/Homework_Gmail.png" alt="Homework: Gmail"></p>
 
@@ -846,7 +845,7 @@
 
     
       <nav id="page-nav">
-        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Далее &raquo;</a>
       </nav>
     </section>
     <footer id="footer">
