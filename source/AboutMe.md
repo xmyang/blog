@@ -1,9 +1,9 @@
 ## Hello
 
 
-I am **YangXuemin (Michelle)**, a Quality Analyst from China, who worked in software testing since 2010.
+I am **YangXuemin (Michelle)**, a Business and Quality Analyst who worked in software analysis and testing since 2010. Currently I am employed by [ThoughtWorks](https://www.thoughtworks.com).
 
-![YangXuemin (Michelle)'s avatar](https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/Avatar.jpg)
+![YangXuemin (Michelle)'s avatar](https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/avatar.png)
 
 #### I have published my first paper book about Web Testing:
 
