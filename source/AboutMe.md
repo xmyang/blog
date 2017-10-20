@@ -1,7 +1,7 @@
 ## Hello
 
 
-I am **YangXuemin (Michelle)**, a Business and Quality Analyst who worked in software analysis and testing since 2010. Currently I am employed by [ThoughtWorks](https://www.thoughtworks.com).
+I am **YangXuemin**, a Business and Quality Analyst who worked in software analysis and testing since 2010. Currently I am employed by [ThoughtWorks](https://www.thoughtworks.com).
 
 ![YangXuemin (Michelle)'s avatar](https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/avatar.png)
 
