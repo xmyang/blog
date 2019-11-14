@@ -1,7 +1,7 @@
 ## Hello
 
 
-I am **YangXuemin**, a Product Manager now, and was a Business and Quality Analyst who worked in software analysis and testing since 2010. Currently I am employed by [Airwallex](https://www.airwallex.com).
+I am **YangXuemin**, a Product Manager now, and was a Business and Quality Analyst who worked in software analysis and testing since 2010. Currently I am employed by [Airwallex](https://www.airwallex.com) and live in Melbourne, Australia.
 
 ![YangXuemin (Michelle)'s avatar](https://raw.githubusercontent.com/xmyang/xmyang.github.io/master/images/avatar.png)
 
